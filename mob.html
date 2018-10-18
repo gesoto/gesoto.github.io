@@ -1,0 +1,35 @@
+<html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+  }
+
+  input {
+    width: 100%;
+  }
+</style>
+
+<body>
+  <div id="sidebar">
+    <input type="image" src="content/indexstrip/ind-voice.jpg" onclick="myFunction('voice')" />
+    <input type="image" src="content/indexstrip/ind-vidaau.jpg" onclick="myFunction('vidaau')" />
+    <input type="image" src="content/indexstrip/ind-mobile.jpg" onclick="myFunction('mobile')" />
+    <input type="image" src="content/indexstrip/ind-vidaa.jpg" onclick="myFunction('vidaa')" />
+    <input type="image" src="content/indexstrip/ind-phone.jpg" onclick="myFunction('phone')" />
+    <input type="image" src="content/indexstrip/ind-games.jpg" onclick="myFunction('games')" />
+    <input type="image" src="content/indexstrip/ind-about.jpg" onclick="myFunction('about')" />
+  </div>
+
+  <script>
+
+    function myFunction(e) {
+      console.log(e);
+      window.location.href = "content/" + e + "/index.html";
+    }
+
+  </script>
+</body>
+
+</html>
