@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+    }
+
+    #sidebar {
+      position: absolute;
+      width: 400px;
+      height: 100%;
+      overflow-y: scroll;
+    }
+
+    iframe {
+      width: calc(100% - 400px);
+      height: 100%;
+      margin-left: 400px;
+      max-width: 900px;
+    }
+
+    img,
+    input {
+      width: 100%;
+    }
+
+    .ov {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .ov:hover {
+      opacity: 1;
+      transition: .5s ease;
+    }
+
+    #warning {
+      display: none;
+      height: 0px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+
+    @media only screen and (max-width: 800px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      iframe {
+        display: none;
+      }
+
+      .ov {
+        opacity: 1;
+      }
+
+      #warning {
+        display: block;
+        height: 200px;
+      }
+    }
+
+    .th {
+      margin: 40px;
+      position: relative;
+      font-family: Helvetica, Sans-Serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: white;
+      text-align: center;
+    }
+
+    .th .t1 {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar">
+
+    <div id="warning">
+      <div id="warningtext" class="th">
+        <div class="t1">Hello mobile 📱 friend,</div><br>
+        <div>Lots of really cool animated videos incoming!, if you are using cellular data, please be aware.</div><br>
+        <div>Scroll away!</div><br>
+      </div>
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
+      <img src="content/indexstrip/clean/ind-voice.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
+      <img src="content/indexstrip/clean/ind-vidaau.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
+      <img src="content/indexstrip/clean/ind-phone.jpg" alt="">
+    </div>
+    
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
+      <img src="content/indexstrip/clean/ind-vidaa.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
+      <img src="content/indexstrip/clean/ind-mobile.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-games-ov.png" class="ov" onclick="opensec('games')" />
+      <img src="content/indexstrip/clean/ind-games.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <img src="content/indexstrip/over/ind-about-ov.png" class="ov" onclick="opensec('about')" />
+      <img src="content/indexstrip/clean/ind-about.jpg" alt="">
+    </div>
+
+  </div>
+
+  <iframe id="myFrame" src="content/about/index.html" frameBorder="0"></iframe>
+
+  <script>
+    console.log("made by Salvador Soto ❤️ http://ssoto.net")
+
+    // open section
+    function opensec(e) {
+      // console.log(e);
+      if (window.innerWidth > 800) {
+        document.getElementById("myFrame").src = "content/" + e + "/index.html";
+      } else {
+        window.location.href = "content/" + e + "/index.html";
+      }
+    }
+
+    // warning message
+    window.onscroll = function () { checkscroll() };
+    function checkscroll() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("warning").style.height = "0px";
+        document.getElementById("warningtext").style.margin = "0px";
+        document.getElementById("warningtext").style.opacity = 0;
+        window.onscroll = null;
+      }
+    }
+  </script>
+</body>
+
+</html>
