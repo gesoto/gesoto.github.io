@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      color: black;
+      background-color: white;
+    }
+
+    #ttl {
+      height: 50px;
+      font-family: Helvetica, Sans-Serif;
+      font-weight: 400;
+      font-size: 4rem;
+    }
+
+    .desc {
+      font-family: Helvetica, Sans-Serif;
+      font-weight: 300;
+      font-size: 1.05rem;
+    }
+
+    .all {
+      margin: 4rem;
+    }
+
+    .desc img {
+      width: 1.8rem;
+    }
+
+    span.round0 {
+      border: 1px solid rgb(223, 163, 0);
+      border-radius: 8px;
+    }
+
+    span.round1 {
+      border: 1px solid black;
+    }
+
+    span.round2 {
+      /* border: 1px solid white; */
+      background-color: rgb(161, 148, 167);
+    }
+
+    span.round3 {
+      border: 1px solid black;
+      border-radius: 12px;
+    }
+
+    span.round4 {
+      color: white;
+      background-color: #f706ce;
+    }
+
+    span.round5 {
+      border: 1px solid rgb(0, 140, 255);
+    }
+
+    span.round6 {
+      border: 1px solid rgb(190, 0, 207);
+      border-radius: 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      background-color: #000000;
+    }
+
+    .colors {
+      font-size: 1.5rem;
+      font-weight: 600;
+      /* letter-spacing: 2px; */
+      background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 3s infinite linear;
+    }
+
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
+      }
+
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .all {
+        margin: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slide"></div>
+
+  <div class="all">
+    <p id="ttl"></p>
+    <p class="desc">
+      My name is Salvador Soto, I've been working in User Interfaces for the past <span class="colors">12+</span>
+      years.<br>
+      I graduated from Industrial Design in 2008 and later
+      served as Senior Product Designer in the Rapid Prototyping
+      and Innovation areas for Flextronics and Hisense.<br>
+      <br>
+      I'm very passionate about <span><img
+          src="emoticon/compression_1f5dc.png"></span>prototyping, designing and researching novel interfaces and technologies that can be
+      used in meaningful ways.<br>
+      <br>
+      I worked at Flextronics developing the Imerj dual-screen smartphone hybrid, and at Hisense as a core contributor
+      to
+      the VIDAA TV platform. My involvement in these projects have listed me as a registered inventor in multiple
+      technology & innovation patents.<br>
+      <br>
+      As a multi-disciplinary <span><img src="emoticon/male-mechanic_1f468-200d-1f527.png"></span> designer, my
+      expertise is not limited to
+      <span class="round0">Industrial Design</span>
+      <span class="round3">UX/UI</span>
+      <span class="round1">Rapid Prototyping</span>
+      <span class="round6">Programming</span>
+      <span class="round2">Animation</span>
+      <span class="round5">Motion Graphics</span>
+      <span class="round3">Interactive Design</span>
+      <br>
+      <br>
+      Adding to my global experience; I’ve worked together <span><img src="emoticon/handshake_1f91d.png"></span> with
+      different teams in Mexico, US, Canada, and China. I've also landed finalist positions in national and
+      international design award contests such as Michelin and Index
+      Award. <span><img src="emoticon/trophy_1f3c6.png"></span><br><br>
+      Please reach me at <span class="round4">soto.salvador@gmail.com</span> | <a href="https://www.linkedin.com/in/salvador-soto-a47b8b34"
+        target="_blank">LinkedIn</a>
+    </p>
+  </div>
+  <script src="typ.js"></script>
+</body>
+
+</html>
