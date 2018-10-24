@@ -1,6 +1,6 @@
 var i = 0;
 var w = -1;
-var words = ["Hello,", "🖥 👀", "Hola,👋", "你好,"];
+var words = ["Hello,👋", "🖥 👀", "Hola,", "你好,"];
 var time = [15000, 6000, 3000, 3000];
 var str;
 
