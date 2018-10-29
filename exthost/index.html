@@ -131,64 +131,65 @@
           <div class="t1">Hello mobile friend,</div>
           <br>
           <div>Thanks for stopping by<br><br></div>
-          <span><img src="https://ssoto.deanbritto.com/prtf/content/about/emoticon/briefcase_1f4bc.png" alt=""></span>
+          <span><img src="emoticon/briefcase_1f4bc.png" alt=""></span>
         </div>
       </div>
 
       <div class="sbitm">
         <div id="tint-about"></div>
-        <img id="titl-about" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-about-ov.png" class="ov" onclick="opensec('about')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-about.jpg" alt="">
+        <img id="titl-about" src="indx/ind-about-ov.png" class="ov" onclick="opensec('about')" />
+        <img src="indx/ind-about.jpg" alt="">
       </div>
 
       <div class="sbitm">
         <div id="tint-voice"></div>
-        <img id="titl-voice" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-voice.jpg" alt="">
+        <img id="titl-voice" src="indx/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
+        <img src="indx/ind-voice.jpg" alt="">
       </div>
       
       <div class="sbitm">
         <div id="tint-games"></div>
-        <img id="titl-games" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-games-ov.png" class="ov" onclick="opensec('games')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-games.jpg" alt="">
+        <img id="titl-games" src="indx/ind-games-ov.png" class="ov" onclick="opensec('games')" />
+        <img src="indx/ind-games.jpg" alt="">
       </div>
 
       
 
       <div class="sbitm">
         <div id="tint-vidaau"></div>
-        <img id="titl-vidaau" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-vidaau.jpg" alt="">
+        <img id="titl-vidaau" src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
+        <img src="indx/ind-vidaau.jpg" alt="">
       </div>
 
       <div class="sbitm">
         <div id="tint-phone" id="tint-phone"></div>
-        <img id="titl-phone" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-phone.jpg" alt="">
+        <img id="titl-phone" src="indx/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
+        <img src="indx/ind-phone.jpg" alt="">
       </div>
 
       <div class="sbitm">
         <div id="tint-vidaa" id="tint-vidaa"></div>
-        <img id="titl-vidaa" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-vidaa.jpg" alt="">
+        <img id="titl-vidaa" src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
+        <img src="indx/clean/ind-vidaa.jpg" alt="">
       </div>
 
       <div class="sbitm">
         <div id="tint-mobile" id="tint-mobile"></div>
-        <img id="titl-mobile" src="https://ssoto.deanbritto.com/prtf/content/indexstrip/over/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
-        <img src="https://ssoto.deanbritto.com/prtf/content/indexstrip/clean/ind-mobile.jpg" alt="">
+        <img id="titl-mobile" src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
+        <img src="indx/ind-mobile.jpg" alt="">
       </div>
 
     </div>
 
-    <iframe id="myFrame" src="https://ssoto.deanbritto.com/prtf/content/about/home.html" frameBorder="0"></iframe>
+    <iframe id="myFrame" src="home.html" frameBorder="0"></iframe>
 
   <!-- </div> -->
 
   <script>
 
     console.log("made by Salvador Soto ❤️ http://ssoto.net");
-
+    
+    var brwhost = "https://ssoto.deanbritto.com/prtf/content/"
     var elem = null; // item selected
     var elim = null; // title selected
 
@@ -197,9 +198,9 @@
       // console.log(e);
       if (window.innerWidth > 800) {
         selectedstate(e);
-        document.getElementById("myFrame").src = "https://ssoto.deanbritto.com/prtf/content/" + e + "/index.html";
+        document.getElementById("myFrame").src = brwhost + e + "/index.html";
       } else {
-        window.location.href = "https://ssoto.deanbritto.com/prtf/content/" + e + "/index.html";
+        window.location.href = brwhost + e + "/index.html";
       }
     }
 
