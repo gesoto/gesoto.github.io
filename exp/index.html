@@ -4,7 +4,6 @@
 <head>
 
   <meta charset="UTF-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
@@ -12,18 +11,10 @@
   <title>Salvador Soto</title>
 
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-  <!-- <link rel="stylesheet" href="css/arrow.css" media="screen" type="text/css" /> -->
-  <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'> -->
 
 </head>
 
 <body>
-  <!-- <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"> -->
-
-  <!-- <div id="console"></div> -->
-  <!-- <a class="ghost-button" id="ghost-button" href="projects/index.html">FULL MOTION PORTFOLIO</a> -->
-  <!-- <div class="ghost-button-footer" id="ghost-button-footer">FLASH REQUIRED</div> -->
-  <!-- <div class="warning" id="warning">FOR FULL MOTION PORTFOLIO CHECK DESKTOP VERSION</div> -->
   <div class="arrow" id="right-arrow">
     <svg width="50px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
       <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 " />
@@ -36,8 +27,6 @@
     </svg>
   </div>
 
-  <!-- <div class="arrow" id="right-arrow">next</div> -->
-  <!-- <div class="arrow" id="left-arrow">prev</div> -->
 
   <div id="image-carousel" class="dragdealer active">
     <ul id="slides" class="handle" style="-webkit-perspective: 1000px; -webkit-backface-visibility: hidden; -webkit-transform: translateX(200px);">
@@ -45,7 +34,7 @@
       <li class="slide img1">
         <!-- <div style="background-color:black; width:100%; height:100%; opacity:0.5;"></div> -->
         <div class="scrl">
-          <div class="imgwrap"><img src="img/1.jpg" alt=""></div>
+          <div class="imgwrap"><img src="https://ssoto.deanbritto.com/prtf/content/exp/img/1.jpg" alt=""></div>
         </div>
         <!-- <div class="info"> -->
         <!-- <p class="title">Salvador Soto<br><span>Creative Designer</span></p> -->
@@ -57,7 +46,7 @@
       <li class="slide img2">
         <!-- <div style="background-color:black; width:100%; height:100%; opacity:0.5;"></div> -->
         <div class="scrl">
-            <div class="imgwrap"><img src="img/2.jpg" alt=""></div>
+            <div class="imgwrap"><img src="https://ssoto.deanbritto.com/prtf/content/exp/img/2.jpg" alt=""></div>
         </div>
         <!-- <div class="info"> -->
         <!-- <p class="title">Rapid Prototyping & Interactive Simulations</p> -->
@@ -68,7 +57,7 @@
       <li class="slide img3">
         <!-- <div style="background-color:black; width:100%; height:100%; opacity:0.5;"></div> -->
         <div class="scrl">
-            <div class="imgwrap"><img src="img/3.jpg" alt=""></div>
+            <div class="imgwrap"><img src="https://ssoto.deanbritto.com/prtf/content/exp/img/3.jpg" alt=""></div>
         </div>
         <!-- <div class="info"> -->
         <!-- <p class="title">UI Motion Design & UI Animation</p> -->
@@ -79,7 +68,7 @@
       <li class="slide img4">
         <!-- <div style="background-color:black; width:100%; height:100%; opacity:0.5;"></div> -->
         <div class="scrl">
-            <div class="imgwrap"><img src="img/4.jpg" alt=""></div>
+            <div class="imgwrap"><img src="https://ssoto.deanbritto.com/prtf/content/exp/img/4.jpg" alt=""></div>
         </div>
         <!-- <div class="info"> -->
         <!-- <p class="title">UI Graphic Design & Production</p> -->
@@ -101,12 +90,12 @@
         var $currentstep = $.global.slider.getStep();
         var $nextstep = parseInt($currentstep) + 1;
         $.global.slider.setStep($nextstep);
-      }, 500);
+      }, 1000);
       setTimeout(function () {
         var $currentstep = $.global.slider.getStep();
         var $nextstep = parseInt($currentstep) - 1;
         $.global.slider.setStep($nextstep);
-      }, 1000);
+      }, 1500);
     }
   </script>
 
