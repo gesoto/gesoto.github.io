@@ -59,7 +59,7 @@ function checkArrow() {
   if ($.global.slider.getStep() == "1,1") {
     // console.log("1st");
     document.getElementById("left-arrow").style.display = "none";
-  } else if ($.global.slider.getStep() == "4,1") {
+  } else if ($.global.slider.getStep() == "6,1") {
     // console.log("last");
     document.getElementById("right-arrow").style.display = "none";
   } else {
