@@ -27,6 +27,7 @@
     img,
     input {
       width: 100%;
+      cursor: pointer;
     }
 
     .ov {
@@ -88,9 +89,9 @@
       }
 
       .selectdtint {
-      /* opacity: 0; */
-      display: none;
-    }
+        /* opacity: 0; */
+        display: none;
+      }
 
       #warning {
         display: block;
@@ -117,6 +118,11 @@
     span img {
       width: 30px;
     }
+
+    .foot:hover {
+      background-color: rgb(56, 56, 56);
+      transition: .5s;
+    }
   </style>
 </head>
 
@@ -124,76 +130,74 @@
 
   <!-- <div class="allpag"> -->
 
-    <div id="sidebar">
+  <div id="sidebar">
 
-      <div id="warning">
-        <div id="warningtext" class="th">
-          <br><br><br>
-          <div class="t1">Hello mobile friend,</div>
-          <br>
-          <div>Thanks for stopping by<br><br></div>
-          <span><img src="emoticon/briefcase_1f4bc.png" alt=""></span>
-        </div>
+    <div id="warning">
+      <div id="warningtext" class="th">
+        <br><br><br>
+        <div class="t1">Hello mobile friend,</div>
+        <br>
+        <div>Thanks for stopping by<br><br></div>
+        <span><img src="emoticon/briefcase_1f4bc.png" alt=""></span>
       </div>
-
-      <div class="sbitm">
-        <div id="tint-about"></div>
-        <img id="titl-about" src="indx/ind-about-ov.png" class="ov" onclick="opensec('about')" />
-        <img src="indx/ind-about.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-voice"></div>
-        <img id="titl-voice" src="indx/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
-        <img src="indx/ind-voice.jpg" alt="">
-      </div>
-      
-      <div class="sbitm">
-        <div id="tint-games"></div>
-        <img id="titl-games" src="indx/ind-games-ov.png" class="ov" onclick="opensec('games')" />
-        <img src="indx/ind-games.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-vidaau"></div>
-        <img id="titl-vidaau" src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
-        <img src="indx/ind-vidaau.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-phone" id="tint-phone"></div>
-        <img id="titl-phone" src="indx/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
-        <img src="indx/ind-phone.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-vidaa" id="tint-vidaa"></div>
-        <img id="titl-vidaa" src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
-        <img src="indx/ind-vidaa.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-mobile" id="tint-mobile"></div>
-        <img id="titl-mobile" src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
-        <img src="indx/ind-mobile.jpg" alt="">
-      </div>
-
-      <div class="sbitm">
-        <div id="tint-exp" id="tint-exp"></div>
-        <img id="titl-exp" src="indx/ind-exp-ov.png" class="ov" onclick="window.open('b/experimental.html','_blank')" />
-        <img src="indx/ind-exp.jpg" alt="">
-      </div>
-
     </div>
 
-    <iframe id="myFrame" src="home.html" frameBorder="0"></iframe>
+    <div class="sbitm">
+      <div id="tint-about"></div>
+      <img id="titl-about" src="indx/ind-about-ov.png" class="ov" onclick="opensec('about')" />
+      <img src="indx/ind-about.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-voice"></div>
+      <img id="titl-voice" src="indx/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
+      <img src="indx/ind-voice.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-games"></div>
+      <img id="titl-games" src="indx/ind-games-ov.png" class="ov" onclick="opensec('games')" />
+      <img src="indx/ind-games.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-vidaau"></div>
+      <img id="titl-vidaau" src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
+      <img src="indx/ind-vidaau.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-phone" id="tint-phone"></div>
+      <img id="titl-phone" src="indx/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
+      <img src="indx/ind-phone.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-vidaa" id="tint-vidaa"></div>
+      <img id="titl-vidaa" src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
+      <img src="indx/ind-vidaa.jpg" alt="">
+    </div>
+
+    <div class="sbitm">
+      <div id="tint-mobile" id="tint-mobile"></div>
+      <img id="titl-mobile" src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
+      <img src="indx/ind-mobile.jpg" alt="">
+    </div>
+
+    <!-- <div class="foot"> -->
+    <!-- <img src="indx/foot.png"  onclick="window.open('b/b.html','_blank')" /> -->
+    <!-- </div> -->
+
+  </div>
+
+  <iframe id="myFrame" src="home.html" frameBorder="0"></iframe>
 
   <!-- </div> -->
 
   <script>
 
     console.log("made by Salvador Soto ❤️ http://ssoto.net");
-    
+
     var elem = null; // item selected
     var elim = null; // title selected
 
@@ -204,7 +208,7 @@
         selectedstate(e);
         document.getElementById("myFrame").src = e + ".html";
       } else {
-        window.location.href =  e + ".html";
+        window.location.href = e + ".html";
       }
     }
 
@@ -237,4 +241,5 @@
 
   </script>
 </body>
+
 </html>
