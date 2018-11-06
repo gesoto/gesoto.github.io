@@ -1,7 +1,7 @@
 var i = 0;
 var w = -1;
-var words = ["Prototyping", "Interactive Design", "User Interfaces", "Pizza 🍕", "Animation", "Programming", "Game Design", "Making Music", "you for stopping by ❤️"];
-var time = [2000, 2500, 2300, 2000, 2000, 2000, 2000, 2000, 4000];
+var words = ["Interactive Design", "User Interfaces", "Prototyping", "Pizza 🍕", "Animation", "Programming", "Design", "Making Music", "you for stopping by ❤️"];
+var time = [2500, 2300, 2000, 2000, 2000, 2000, 2000, 2000, 4000];
 var str;
 
 function typetext() {
