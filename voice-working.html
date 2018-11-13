@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <!-- for slider -->
+    <link
+      rel="stylesheet"
+      href="dragdealer/style.css"
+      media="screen"
+      type="text/css"
+    />
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0;
+      pointer-events: none;
+      overflow-x: hidden;
+    }
+
+    video,
+    img {
+      width: 100%;
+    }
+
+    .over {
+      position: absolute;
+    }
+
+    /* for bottom carousel */
+    .strip {
+      width: 10000px;
+      background-color: white;
+      /* height: 360px; */
+    }
+
+    .strip img {
+      width: 600px;
+      margin: 10px;
+    }
+  </style>
+
+  <body>
+    <!-- slider -->
+    <div id="image-carousel" class="dragdealer active">
+      <ul id="slides" class="handle">
+        <li class="slide img">
+          <div class="imgwrap"><img src="footslider/1.jpg" /></div>
+        </li>
+        <li class="slide img">
+          <div class="imgwrap"><img src="footslider/4.jpg" /></div>
+        </li>
+        <li class="slide img">
+          <div class="imgwrap"><img src="footslider/1.jpg" /></div>
+        </li>
+        <li class="slide img">
+          <div class="imgwrap"><img src="footslider/4.jpg" /></div>
+        </li>
+      </ul>
+    </div>
+    <script src="dragdealer/jquery.js"></script>
+    <script src="dragdealer/dragdealer.js"></script>
+    <script src="dragdealer/index.js"></script>
+
+    <!-- body -->
+    <script>
+      var inx = [
+        2,
+        25,
+        26,
+        4,
+        5,
+        51,
+        "13-blue",
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        6,
+        7,
+        8,
+        9,
+        10
+      ];
+      var int = [
+        2,
+        00,
+        01,
+        0,
+        1,
+        00,
+        01,
+        00,
+        01,
+        00,
+        01,
+        01,
+        00,
+        01,
+        00,
+        01,
+        00,
+        0,
+        1,
+        0,
+        1,
+        00
+      ];
+      var simg = [0, 1, 2, 3];
+      var set = "voiceui";
+    </script>
+    <script src="gen.js"></script>
+
+    <!-- carousel -->
+    <div id="strip" class="strip">
+      <img src="footslider/1.jpg"/>
+      <img src="footslider/2.jpg"/>
+      <img src="footslider/3.jpg"/>
+      <img src="footslider/4.jpg"/>
+      <!-- <img src="footslider/5.jpg"/> -->
+      <!-- <img src="footslider/6.jpg"/> -->
+      <!-- <img src="footslider/7.jpg"/> -->
+      <!-- <img src="footslider/8.jpg"/> -->
+      <!-- <img src="footslider/9.jpg"/> -->
+      <!-- <img src="footslider/10.jpg"/> -->
+      <img src="footslider/1.jpg"/>
+      <img src="footslider/2.jpg"/>
+      <img src="footslider/3.jpg"/>
+    </div>
+    <div style="background-color:white"><br /><br /><br /><br /><br /><br /><br /></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script>
+      var strip = document.getElementById("strip");
+      TweenMax.to(strip, 20, {
+        x: -(600 * 4),
+        repeat: -1,
+        ease: Linear.easeNone
+      });
+    </script>
+  </body>
+</html>

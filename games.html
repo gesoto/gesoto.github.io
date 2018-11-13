@@ -1,30 +1,51 @@
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <style>
   body {
     margin: 0;
     pointer-events: none;
+    background-color: #111111;
   }
-
-  video,
-  img {
+  
+  video, img {
     width: 100%;
   }
 
   .over {
     position: absolute;
   }
+
+  .imgwrap {
+    left: calc(50% - 450px);
+    position: absolute;
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .imgwrap {
+      left: 0;
+    }
+  }
+
 </style>
 
 <body>
+  <!-- <div class="bod"> -->
+    <div class="imgwrap">
+      <img src="https://ssoto.deanbritto.com/prtf/content/games/p1.jpg" alt="">
+      <div class="comp">
+        <img src="https://ssoto.deanbritto.com/prtf/content/games/p2.png" class="over" alt="">
+        <video src="https://ssoto.deanbritto.com/prtf/content/games/p2.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+      </div>
+      <img src="https://ssoto.deanbritto.com/prtf/content/games/p4.jpg" alt="">
+      <div class="comp">
+        <img src="https://ssoto.deanbritto.com/prtf/content/games/p6.png" class="over" alt="">
+        <video src="https://ssoto.deanbritto.com/prtf/content/games/p6.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+      </div>
+      <video src="https://ssoto.deanbritto.com/prtf/content/games/p7.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+      <video src="https://ssoto.deanbritto.com/prtf/content/games/p8.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+    </div>
+  <!-- </div> -->
 </body>
-
-<script>
-  var inx = [1, 2, 4, 6, 7, 8];
-  var int = [0, 2, 0, 2, 1, 1];
-  var set = 'games';
-</script>
-
-<script src="gen.js"></script>
 
 </html>
