@@ -1,60 +1,20 @@
 <html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    pointer-events: none;
-    overflow-x: hidden;
-  }
-
-  video,
-  img {
-    width: 100%;
-  }
-
-  .over {
-    position: absolute;
-  }
-
-  /* for bottom carousel */
-    .strip {
-      width: 10000px;
-      background-color: white;
-    }
-
-    .strip img {
-      width: 600px;
-      margin: 10px;
-    }
-</style>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <link rel="stylesheet" href="strip.css" media="screen" type="text/css" />
+  <title>Salvador Soto Portfolio</title>
+</head>
 
 <body>
-
-<script>
-  var inx = [0, 2, 25, 26, 4, 5, 51, 13, 14, 17, 19, 20, 23, 22, 21, 6, 7, 8, 9, 10]
-  var int = [0, 2, 00, 01, 0, 1, 00, 01, 00, 01, 01, 00, 01, 00, 01, 0, 1, 0, 1, 00]
-  var set = 'voiceaui';
-</script>
-<script src="gen.js"></script>
-
-<!-- carousel -->
-<div id="strip" class="strip">
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/1.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/2.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/3.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/4.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/5.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/6.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/1.jpg"/>
-  <img src="https://ssoto.deanbritto.com/prtf/content/slider/voice/2.jpg"/>
-</div>
-<div style="background-color:white"><br /><br /><br /></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-<script>
-  var strip = document.getElementById("strip");
-  TweenMax.to(strip, 50, {x: -(600 * 6 + 140), repeat: -1, ease: Linear.easeNone});
-</script>
-
+  <div class="imgwrap">
+    <script>
+      var inx = [2, 25, 26, 4, 5, 51, 13, 14, 17, 19, 20, 23, 22, 21, 6, 7, 8, 9, 10, 11, 18]
+      var int = [2, 00, 01, 0, 1, 00, 01, 00, 01, 01, 00, 01, 00, 01, 0, 1, 0, 1, 00, 01, 00]
+      var set = 'voiceaui';
+    </script>
+    <script src="gen.js"></script>
+  </div>
 </body>
+
 </html>

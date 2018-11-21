@@ -1,14 +1,14 @@
 var i = 0;
 var w = -1;
-var words = ["Interactive Design", "User Interfaces", "Prototyping", "Pizza 🍕", "Animation", "Programming", "Design", "Making Music", "you for stopping by ❤️"];
-var time = [2500, 2300, 2000, 2000, 2000, 2000, 2000, 2000, 4000];
+var words = ["UX Designer", "Prototyper", "Visual Designer", "Motion Designer", "Programmer", "Product Designer"];
+var time = [6000, 2000, 2000, 2000, 2000, 8000];
 var str;
 
 function typetext() {
   if (i < words[w].length) {
     document.getElementById("ttl").innerHTML += words[w].charAt(i);
     i++;
-    setTimeout(typetext, 100); // speed to write words
+    setTimeout(typetext, 40); // speed to write words
   }
 }
 
@@ -40,4 +40,9 @@ function iniremove() {
   removetext();
 }
 
-setTimeout(typeloop, 500);
+setTimeout(function () {
+  str = "Product Designer";
+  i = 16;
+  removetext();
+  // setTimeout(typeloop, 5000);
+}, 8000);

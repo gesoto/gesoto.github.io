@@ -1,255 +1,100 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-  <title>Salvador Soto | Designer</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: black;
-    }
-
-    #sidebar {
-      position: absolute;
-      width: 400px;
-      height: 100%;
-      overflow-y: scroll;
-      left: calc(50% - 650px);
-    }
-
-    iframe {
-      width: calc(100% - 400px);
-      height: 100%;
-      margin-left: calc(50% - 250px);
-      max-width: 900px;
-    }
-
-    img,
-    input,
-    video {
-      width: 100%;
-      cursor: pointer;
-    }
-
-    .ov {
-      position: absolute;
-      opacity: .9;
-    }
-
-    .ov:hover {
-      opacity: 1;
-      transition: .5s ease;
-    }
-
-    .selectdimg {
-      opacity: 1;
-    }
-
-    .selectdtint {
-      height: 266.5px;
-      width: 400px;
-      position: absolute;
-      background: white;
-      opacity: .5;
-      /* transition: 1s ease; */
-    }
-
-    #warning {
-      display: none;
-      height: 0px;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      -o-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-
-    @media only screen and (max-width: 1300px) {
-      #sidebar {
-        left: 0;
-      }
-
-      iframe {
-        /* opacity: .5; */
-        margin-left: 400px;
-      }
-    }
-
-    @media only screen and (max-width: 800px) {
-      #sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-      }
-
-      iframe {
-        display: none;
-      }
-
-      .ov {
-        opacity: 1;
-      }
-
-      .selectdtint {
-        /* opacity: 0; */
-        display: none;
-      }
-
-      #warning {
-        display: block;
-        height: 250px;
-        background-color: #151515;
-      }
-    }
-
-    .th {
-      /* margin: 40px; */
-      position: relative;
-      font-family: Helvetica, Sans-Serif;
-      font-weight: 400;
-      font-size: 1.1rem;
-      color: white;
-      text-align: center;
-    }
-
-    .th .t1 {
-      font-weight: 600;
-      font-size: 1.4rem;
-    }
-
-    span img {
-      width: 30px;
-    }
-
-    .foot:hover {
-      background-color: rgb(56, 56, 56);
-      transition: .5s;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salvador Soto Portfolio</title>
+  <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 </head>
 
 <body>
 
-  <!-- <div class="allpag"> -->
-
-  <div id="sidebar">
-
-    <div id="warning">
-      <div id="warningtext" class="th">
-        <br><br><br>
-        <div class="t1">Hello mobile friend,</div>
-        <br>
-        <div>Thanks for stopping by<br><br></div>
-        <span><img src="emoticon/briefcase_1f4bc.png" alt=""></span>
-      </div>
-    </div>
-
-    <div class="sbitm">
-        <div id="tint-about"></div>
-        <img id="titl-about" src="indx/ind-aboutme-ov.png" class="ov" onclick="opensec('about')" />
-        <img src="indx/ind-aboutme.jpg" alt="">
-      </div>
-
-    <div class="sbitm">
-      <div id="tint-voice"></div>
-      <img id="titl-voice" src="indx/ind-voice-ov.png" class="ov" onclick="opensec('voice')" />
-      <img src="indx/ind-voice.jpg" alt="">
-      <!-- <video src="indx/ind-voice.mp4" type="video/mp4" playsinline autoplay loop muted></video> -->
-    </div>
-
-    <div class="sbitm">
-      <div id="tint-phone" id="tint-phone"></div>
-      <img id="titl-phone" src="indx/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
-      <img src="indx/ind-phone.jpg" alt="">
-    </div>
-
-    <div class="sbitm">
-      <div id="tint-vidaa" id="tint-vidaa"></div>
-      <img id="titl-vidaa" src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
-      <img src="indx/ind-vidaa.jpg" alt="">
-    </div>
-
-    <div class="sbitm">
-      <div id="tint-vidaau"></div>
-      <img id="titl-vidaau" src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
-      <img src="indx/ind-vidaau.jpg" alt="">
-    </div>
-
-    <div class="sbitm">
-      <div id="tint-mobile" id="tint-mobile"></div>
-      <img id="titl-mobile" src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
-      <img src="indx/ind-mobile.jpg" alt="">
-    </div>
-
-    <!-- <div class="sbitm">
-      <div id="tint-games"></div>
-      <img id="titl-games" src="indx/ind-games-ov.png" class="ov" onclick="opensec('games')" />
-      <img src="indx/ind-games.jpg" alt="">
-    </div>
-
-    <div class="sbitm">
-      <div id="tint-exp"></div>
-      <img id="titl-exp" src="indx/ind-exp-ov.png" class="ov" onclick="window.open('b/index.html','_blank')" />
-      <img src="indx/ind-exp.jpg" alt="">
-    </div> -->
-
-    
-
-    <!-- <div class="foot"> -->
-    <!-- <img src="indx/foot.png"  onclick="window.open('b/b.html','_blank')" /> -->
-    <!-- </div> -->
-
+  <!-- close button -->
+  <div id="close" class="close" onclick="closeslide()">
+    <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-31.000000, -28.000000)">
+          <g id="Group" transform="translate(31.000000, 28.000000)">
+            <circle id="Oval" fill="#FFFFFF" opacity="0.750093006" cx="30" cy="30" r="30"></circle>
+            <path d="M42.7173913,17.2826087 L17.4427242,42.5572758" id="Line" stroke="#555555" stroke-width="3"
+              stroke-linecap="square"></path>
+            <path d="M17.1565607,17.1565607 L42.6817368,42.6817368 L17.1565607,17.1565607 Z" id="Line" stroke="#555555"
+              stroke-width="3" stroke-linecap="square"></path>
+          </g>
+        </g>
+      </g>
+    </svg>
   </div>
 
-  <iframe id="myFrame" src="about.html" frameBorder="0"></iframe>
 
-  <!-- </div> -->
+  <!-- particle 3d animation -->
+  <div id="cubes"></div>
+  <script src="three/js/three.js"></script>
+  <script src="three/js/Projector.js"></script>
+  <script src="three/js/CanvasRenderer.js"></script>
+  <script src="three/bg.js"></script>
 
-  <script>
 
-    console.log("made by Salvador Soto ❤️ http://ssoto.net");
+  <!-- intro title & description -->
+  <div id="info">
+    <div class="title">Salvador Soto</div>
+    <div class="subtitle"><span id="ttl">Product Designer</span></div>
+    <div class="description">I am a multi-disciplinary designer who enjoys solving problems and crafting experiences.
+      <br><br>
+      While working in Flextronics and Hisense innovation, I successfully created multiple products from the ground up,
+      becoming a registered inventor, and acquiring significant experience in all areas of Product Design.
+      <br><br>
+      I find <span id="fun" onclick="particles()">fun</span> and joy in <span id="mywork" onclick="opensec('mywork')">my
+        work</span>, and I'm constantly curious to learn, explore, and create. I am currently looking for my next
+      adventure. Learn more <span id="aboutme" onclick="opensec('about')">about me.</span></div>
+  </div>
 
-    var elem = null; // item selected
-    var elim = null; // title selected
 
-    // open section
-    function opensec(e) {
-      // console.log(e);
-      if (window.innerWidth > 800) {
-        selectedstate(e);
-        document.getElementById("myFrame").src = e + ".html";
-      } else {
-        window.location.href = e + ".html";
-      }
-    }
+  <!-- project grid -->
+  <div class="fp"></div>
+  <div id="grid">
+    <div class="subtitle">Projects</div>
+    <div class="grid-container grid-container--fill">
+      <div class="grid-element">
+        <img src="indx/ind-voice-ov.png" class="ov" id="uno" onclick="opensec('voice')" />
+        <img src="indx/ind-voice.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-phone-ov.png" class="ov" onclick="opensec('phone')" />
+        <img src="indx/ind-phone.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
+        <img src="indx/ind-vidaa.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
+        <img src="indx/ind-vidaau.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
+        <img src="indx/ind-mobile.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-games-ov.png" class="ov" onclick="opensec('games')" />
+        <img src="indx/ind-games.jpg">
+      </div>
+    </div>
+  </div>
 
-    // selected state and deselect previous
-    function selectedstate(e) {
-      if (elem != null) {
-        elem.classList.remove('selectdtint'); // for tint
-        elim.classList.remove('selectdimg'); // for title
-        elim.classList.add('ov'); // for title
-      }
-      // for tint
-      elem = document.getElementById('tint-' + e);
-      elem.classList.add('selectdtint');
-      // for title
-      elim = document.getElementById('titl-' + e);
-      elem.classList.remove('ov');
-      elim.classList.add('selectdimg');
-    }
 
-    // warning message dismissal
-    window.onscroll = function () { checkscroll() };
-    function checkscroll() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("warning").style.height = "0px";
-        document.getElementById("warningtext").style.margin = "0px";
-        document.getElementById("warningtext").style.opacity = 0;
-        window.onscroll = null;
-      }
-    }
+  <!-- project strip -->
+  <iframe class="strip" id="strip" src="about.html" frameBorder="0"></iframe>
 
-  </script>
+
+  <!-- external scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js'></script>
+  <script src="index.js"></script>
+  <script src="typh.js"></script>
+  <script>console.log("Made with ❤️ by Salvador Soto | https://ssoto.net");</script>
+
 </body>
 
 </html>

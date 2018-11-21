@@ -1,0 +1,29 @@
+  body {
+    margin: 0;
+  }
+
+  video,
+  img {
+    width: 100%;
+    pointer-events: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .over {
+    position: absolute;
+  }
+
+  .imgwrap {
+    position: absolute;
+    left: calc(50% - 450px);
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .imgwrap {
+      left: 0;
+    }
+  }
