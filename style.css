@@ -133,19 +133,19 @@ img {
   transition: .5s;
 }
 #fun {
-  color: white;
+  color: rgb(255, 0, 85);
 }
 #aboutme {
   color: rgb(255, 0, 85);
 }
 #mywork {
-  color: rgb(255, 183, 0);
+  color: rgb(255, 0, 85);
 }
 #fun:hover {
   color: rgb(0, 255, 170);
 }
 #aboutme:hover, #mywork:hover {
-  color: white; 
+  color: rgb(255, 192, 17); 
 }
 #mywork:hover {
   color: rgb(132, 0, 255);
