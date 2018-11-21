@@ -1,14 +1,17 @@
 var i = 0;
 var w = -1;
-var words = ["Hello,👋", "🖥 👀", "Hola,", "你好,"];
-var time = [15000, 6000, 3000, 3000];
+var words = ["Hello,👋", "Hola,", "你好,", "🖥 👀"];
+var time = [10000, 3000, 3000, 3000];
 var str;
+var writespeed = 100;
+var deletespeed = 25;
+var wordrestart = 200;
 
 function typetext() {
   if (i < words[w].length) {
     document.getElementById("ttl").innerHTML += words[w].charAt(i);
     i++;
-    setTimeout(typetext, 100); // speed to write words
+    setTimeout(typetext, writespeed); // speed to write words
   }
 }
 
@@ -29,9 +32,9 @@ function removetext() {
     str = str.slice(0, -1);
     document.getElementById("ttl").innerHTML = str;
     i--;
-    setTimeout(removetext, 25); // speed to delete words
+    setTimeout(removetext, deletespeed); // speed to delete words
   } else {
-    setTimeout(typeloop, 200); // before starting a new word
+    setTimeout(typeloop, wordrestart); // before starting a new word
   }
 }
 
@@ -40,4 +43,4 @@ function iniremove() {
   removetext();
 }
 
-setTimeout(typeloop, 500);
+// setTimeout(typeloop, 500);

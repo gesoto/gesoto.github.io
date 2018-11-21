@@ -92,8 +92,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js'></script>
   <script src="index.js"></script>
-  <script src="typh.js"></script>
-  <script>console.log("Made with ❤️ by Salvador Soto | https://ssoto.net");</script>
+
+
+  <!-- typing effect & page log -->
+  <script src="typ.js"></script>
+  <script>
+    console.log("Made with ❤️ by Salvador Soto | https://ssoto.net");
+    words = ["UX Designer", "Prototyper", "Visual Designer", "Motion Designer", "Programmer", "Product Designer"];
+    time = [6000, 2000, 2000, 2000, 2000, 8000];
+    writespeed = 40;
+    setTimeout(function () {
+      str = "Product Designer";
+      i = 16;
+      removetext();
+      // setTimeout(typeloop, 5000);
+    }, 8000);
+  </script>
 
 </body>
 
