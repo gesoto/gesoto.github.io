@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
 
 html, body {
   width: 100%;
@@ -106,10 +107,11 @@ img {
   color: rgb(201, 201, 201);
 }
 .title {
-  font-size: 4.3em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: -12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.6em;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  /* letter-spacing: -12px; */
 }
 
 .subtitle {
