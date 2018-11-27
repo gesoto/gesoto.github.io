@@ -47,10 +47,11 @@
       <br><br>
       I find <span id="fun" onclick="particles()">fun</span> and joy in <span id="mywork" onclick="opensec('mywork')">my
         work</span>, and I'm constantly curious to learn, explore, and create. I am currently looking for my next
-      adventure. More <span id="aboutme" onclick="opensec('about')">about me</span> or check my <span id="aboutme" onclick="window.open('https://www.dropbox.com/s/gupq5nd8p1cy41d/salvador_soto_resume.pdf?dl=0','_blank')">resume.</span></div>
+      adventure. More <span id="aboutme" onclick="opensec('about')">about me</span> or check my <span id="aboutme"
+        onclick="window.open('https://www.dropbox.com/s/gupq5nd8p1cy41d/salvador_soto_resume.pdf?dl=0','_blank')">resume.</span></div>
   </div>
 
-  
+
   <!-- project grid -->
   <div class="fp"></div>
   <div id="grid">
@@ -65,12 +66,12 @@
         <img src="indx/ind-phone.jpg">
       </div>
       <div class="grid-element">
-        <img src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
-        <img src="indx/ind-vidaa.jpg">
-      </div>
-      <div class="grid-element">
         <img src="indx/ind-vidaau-ov.png" class="ov" onclick="opensec('vidaau')" />
         <img src="indx/ind-vidaau.jpg">
+      </div>
+      <div class="grid-element">
+        <img src="indx/ind-vidaa-ov.png" class="ov" onclick="opensec('vidaa')" />
+        <img src="indx/ind-vidaa.jpg">
       </div>
       <div class="grid-element">
         <img src="indx/ind-mobile-ov.png" class="ov" onclick="opensec('mobile')" />
@@ -89,8 +90,10 @@
 
 
   <!-- external scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js'></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script> -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js'></script> -->
+  <script src="TweenMax.min.js"></script>
+  <script src="ScrollToPlugin.min.js"></script>
   <script src="index.js"></script>
 
 
@@ -98,7 +101,7 @@
   <script src="typ.js"></script>
   <script>
     console.log("Made with ❤️ by Salvador Soto | https://ssoto.net");
-    words = ["UX Designer", "Prototyper", "Visual Designer", "Motion Designer", "Programmer", "Product Designer"];
+    words = ["UX Designer", "Rapid Prototyper", "Visual Designer", "Motion Designer", "Programmer", "Product Designer"];
     time = [3000, 2000, 2000, 2000, 2000, 4000];
     writespeed = 40;
     setTimeout(function () {
