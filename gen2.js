@@ -4,7 +4,7 @@ var ims = '<img src="';
 var ime = '.jpg" alt="">';
 var vds = '<video src="';
 var vde = '.mp4" type="video/mp4" playsinline autoplay loop muted></video>';
-var dm = 'https://ssoto.deanbritto.com/portfolio/content/';
+var dm = 'content/';
 var ov1 = '<div><img src="';
 var ov2 = '.png" class="over" alt=""><video src="';
 var ov3 = '.mp4" type="video/mp4" playsinline autoplay loop muted></video></div>';
