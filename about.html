@@ -1,183 +1,192 @@
 <html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <title>Salvador Soto Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+      @import url("https://fonts.googleapis.com/css?family=Poppins:500");
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
-  <title>Salvador Soto Portfolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
-    @import url('https://fonts.googleapis.com/css?family=Poppins:500');
-
-    body {
-      margin: 0;
-      color: rgb(66, 66, 66);
-      background-color: white;
-    }
-
-    #ttl {
-      height: 50px;
-      /* font-family: Helvetica, Sans-Serif; */
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-      font-size: 4rem;
-    }
-
-    .desc {
-      /* font-family: Helvetica, Sans-Serif; */
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-    }
-
-    .all {
-      margin: 4rem;
-    }
-
-    .desc img {
-      width: 1.8rem;
-    }
-
-    span.round0 {
-      border: 2px solid rgb(223, 163, 0);
-      border-radius: 8px;
-      padding: 1px;
-    }
-
-    span.round1 {
-      border: 2px solid black;
-      padding: 1px;
-    }
-
-    span.round2 {
-      border: 2px solid rgb(255, 10, 255);
-      padding: 1px;
-    }
-
-    span.round3 {
-      border: 2px solid black;
-      border-radius: 12px;
-      padding: 2px;
-    }
-
-    span.round5 {
-      border: 2px solid rgb(0, 140, 255);
-      padding: 1px;
-    }
-
-    span.round6 {
-      border: 2px solid rgb(190, 0, 207);
-      border-radius: 10px;
-      padding: 1px;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      background-color: #000000;
-    }
-
-    .email {
-      color: white;
-      background-color: #f706ce;
-    }
-
-    .gameslink {
-      color: rgb(202, 202, 202);
-      text-decoration: none;
-      background-color: #252525;
-      /* padding: 1px; */
-    }
-
-    .explink {
-      color: rgb(202, 202, 202);
-      text-decoration: none;
-      background-color: #252525;
-      /* padding: 1px; */
-    }
-
-    .colors {
-      font-size: 1.2rem;
-      font-weight: 600;
-      /* letter-spacing: 2px; */
-      background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: hue 2s infinite linear;
-    }
-
-    @-webkit-keyframes hue {
-      from {
-        -webkit-filter: hue-rotate(0deg);
+      body {
+        margin: 0;
+        color: rgb(66, 66, 66);
+        background-color: white;
       }
 
-      to {
-        -webkit-filter: hue-rotate(-360deg);
+      #ttl {
+        height: 50px;
+        /* font-family: Helvetica, Sans-Serif; */
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 4rem;
       }
-    }
 
-    @media only screen and (max-width: 800px) {
+      .desc {
+        /* font-family: Helvetica, Sans-Serif; */
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+
       .all {
-        margin: 1.5rem;
+        margin: 4rem;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div id="slide"></div>
+      .desc img {
+        width: 1.8rem;
+      }
 
-  <div class="all">
-    <p id="ttl"></p>
-    <p class="desc">
-      My name is Salvador Soto, I've been working in User Interfaces for the
-      past <span class="colors">10+</span> years.<br />
-      I graduated
-      <!-- <span><img src="emoticon/graduation-cap_1f393.png"></span> -->
-      from Industrial Design in 2008 and later served as Senior Product
-      Designer in the Rapid Prototyping and Innovation areas for Flextronics
-      and Hisense.<br />
-      <br />
-      I'm very passionate about designing and prototyping novel
-      interfaces and meaningful solutions that can influence the lives of many people.<br />
-      <br />
-      I worked at Flextronics developing the Imerj dual-screen smartphone
-      hybrid, and at Hisense as a core contributor to the VIDAA TV platform.
-      My involvement in these projects have listed me as a registered inventor
-      in multiple technology & innovation patents.<br />
-      <br />
-      As a multi-disciplinary
-      <span><img src="emoticon/male-mechanic_1f468-200d-1f527.png" /></span>
-      designer, my expertise is not limited to
-      <span class="round0">User Experience</span>
-      <span class="round1">Rapid Prototyping</span>
-      <span class="round6">Visual Design</span>
-      <span class="round2">Animation</span>
-      <span class="round5">Product Design</span>
-      <span class="round3">Interactive Design</span>
-      I love understanding and exploring all disciplines that may surround
-      my work. <br /><br />
+      span.round0 {
+        border: 2px solid rgb(223, 163, 0);
+        border-radius: 8px;
+        padding: 1px;
+      }
 
-      Adding to my global experience; I’ve worked together with different
-      teams in Mexico, US, Canada, and China. I've landed final positions in
-      national and international design award contests such as Michelin and
-      Index Award. <br /><br />
-      Personally, I love working on side projects, as new challenges keep
-      pushing me to learn, explore, and discover. I independently work on
-      <a href="games.html" class="gameslink" target="_blank">game development</a>
-      and I am often working on personal
-      <a href="id.html" class="explink" target="_blank">designs and explorations.</a>
-      <br><br>
-      <a href="https://pedantic-davinci-61947d.netlify.com" class="explink" target="_blank">Designing a multi-task experience.</a>
-      <br /><br /><br />
+      span.round1 {
+        border: 2px solid black;
+        padding: 1px;
+      }
 
-      Please reach me at <a href="mailto:soto.salvador@gmail.com" target="_top" class="email">soto.salvador@gmail.com</a>
-      | <a href="https://www.linkedin.com/in/salvador-soto-a47b8b34" target="_blank">LinkedIn</a> | <a href="https://github.com/gesoto" target="_blank">Github</a>
+      span.round2 {
+        border: 2px solid rgb(255, 10, 255);
+        padding: 1px;
+      }
 
-    </p>
-  </div>
-  <script src="typ.js"></script>
-  <script>
-    setTimeout(typeloop, 500);
-  </script>
-</body>
+      span.round3 {
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 2px;
+      }
 
+      span.round5 {
+        border: 2px solid rgb(0, 140, 255);
+        padding: 1px;
+      }
+
+      span.round6 {
+        border: 2px solid rgb(190, 0, 207);
+        border-radius: 10px;
+        padding: 1px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        background-color: #000000;
+      }
+
+      .email {
+        color: white;
+        background-color: #f706ce;
+      }
+
+      .gameslink {
+        color: rgb(202, 202, 202);
+        text-decoration: none;
+        background-color: #252525;
+        /* padding: 1px; */
+      }
+
+      .explink {
+        color: rgb(202, 202, 202);
+        text-decoration: none;
+        background-color: #252525;
+        /* padding: 1px; */
+      }
+
+      .colors {
+        font-size: 1.2rem;
+        font-weight: 600;
+        /* letter-spacing: 2px; */
+        background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 2s infinite linear;
+      }
+
+      @-webkit-keyframes hue {
+        from {
+          -webkit-filter: hue-rotate(0deg);
+        }
+
+        to {
+          -webkit-filter: hue-rotate(-360deg);
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .all {
+          margin: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="slide"></div>
+
+    <div class="all">
+      <p id="ttl"></p>
+      <p class="desc">
+        My name is Salvador Soto, I've been working in User Interfaces for the
+        past <span class="colors">10+</span> years.<br /><br />
+        I graduated
+        <!-- <span><img src="emoticon/graduation-cap_1f393.png"></span> -->
+        from Industrial Design in 2008 and later served as a Product Designer,
+        Rapid Prototyper, and Creative Technologist, in Research & Development
+        and Innovation areas for Flextronics, Hisense, and Katerra.<br />
+        <br />
+        I'm very passionate about designing and prototyping novel interfaces and
+        meaningful solutions that can influence people's lives.<br />
+        <br />
+        I worked at Flextronics developing the Imerj dual-screen smartphone
+        hybrid, and at Hisense as a core contributor to the VIDAA TV platform.
+        My involvement in these projects have listed me as a registered inventor
+        in multiple technology & innovation patents.<br />
+        <br />
+        As a multi-disciplinary
+        <span><img src="emoticon/male-mechanic_1f468-200d-1f527.png" /></span>
+        designer, my expertise is not limited to
+        <span class="round0">User Experience</span>
+        <span class="round1">Rapid Prototyping</span>
+        <span class="round6">Visual Design</span>
+        <span class="round2">Animation</span>
+        <span class="round5">Product Design</span>
+        <span class="round3">Interactive Design</span>
+        I love understanding and exploring all disciplines that may surround my
+        work. <br /><br />
+
+        Adding to my global experience; I’ve worked together with different
+        teams in Mexico, US, Canada, and China. I've landed final positions in
+        national and international design award contests such as Michelin and
+        Index Award. <br /><br />
+        Personally, I love working on side projects, as new challenges keep
+        pushing me to learn, explore, and discover. I independently work on game
+        development and I am often working on personal
+        <a href="id.html" class="explink" target="_blank"
+          >designs and explorations.</a
+        >
+        <br /><br />
+
+        Please reach me at
+        <a href="mailto:soto.salvador@gmail.com" target="_top" class="email"
+          >soto.salvador@gmail.com</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/salvador-soto-a47b8b34"
+          target="_blank"
+          >LinkedIn</a
+        >
+        | <a href="https://github.com/gesoto" target="_blank">Github</a>
+      </p>
+    </div>
+    <script src="typ.js"></script>
+    <script>
+      setTimeout(typeloop, 500);
+    </script>
+  </body>
 </html>
