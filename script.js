@@ -244,22 +244,22 @@ function callback(entries, observer) {
 
 // Testing play/pause video
 
-// const testtarget = document.querySelectorAll('video');
-// let testobserver = new IntersectionObserver(testcallback);
-// testtarget.forEach(i => { testobserver.observe(i) });
+const testtarget = document.querySelectorAll('video');
+let testobserver = new IntersectionObserver(testcallback);
+testtarget.forEach(i => { testobserver.observe(i) });
 
-// function testcallback(entries, observer) {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             // console.log(entry.target)
-//             entry.target.play();
-//             // console.log("play " + entry.target.src);
-//         } else {
-//             entry.target.pause();
-//             // console.log("pause");
-//         }
-//     })
-// }
+function testcallback(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // console.log(entry.target)
+            entry.target.play();
+            // console.log("play " + entry.target.src);
+        } else {
+            entry.target.pause();
+            // console.log("pause");
+        }
+    })
+}
 
 
 // Testing fade in while scroll
