@@ -98,7 +98,7 @@ body {
   /* text-align: right; */
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 20px 10px;
 }
 
@@ -175,7 +175,7 @@ body {
   cursor: pointer;
   background: white;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); */
-  box-shadow:  0 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
   color: black;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -314,7 +314,8 @@ body {
 /* ABOUT */
 
 .labelheader {
-position: relative;
+  position: relative;
+  /* background-color: red; */
 }
 
 .labelheader .txtblk {
@@ -322,8 +323,9 @@ position: relative;
   /* height: 0; */
   /* background-color: rgba(146, 97, 97, 0.5); */
   /* padding: 0 0 10px 0 !important; */
-  padding: 0 7% 5% 7%;
-  opacity: 0;
+  /* padding: 0 7% 5% 7%; */
+  /* opacity: 0; */
+  bottom: -48px;
 }
 
 .t1 {
@@ -358,7 +360,7 @@ position: relative;
 @media only screen and (max-width: 500px) {
   .t1 {
     font-size: 9vw;
-    margin-bottom: 8%;
+    /* margin-bottom: 8%; */
   }
   .t1 span {
     font-size: 22vw;
