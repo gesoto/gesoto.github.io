@@ -144,11 +144,11 @@ function topbarcallback(entries, observer) {
         if (entry.isIntersecting) { // && aboutison) {}
             // closeabout();
             if (aboutison) { closeabout(); }
-            gsap.to(t1, { duration: 0.25, opacity: 1 });
+            gsap.to(t1, { duration: 0.5, ease: "expo.out", y: 0 });
             gsap.to(firsttxtblk, { duration: 0.25, opacity: 0 });
         } else {
             aboutmebtn.classList.remove("about-btn-on");
-            gsap.to(t1, { duration: 0.25, opacity: 0 });
+            gsap.to(t1, { duration: 0.5, ease: "expo.out", y: -130 });
             gsap.to(firsttxtblk, { duration: 0.25, opacity: 1 });
         }
     });
