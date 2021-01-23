@@ -148,8 +148,10 @@ function topbarcallback(entries, observer) {
             gsap.to(firsttxtblk, { duration: 0.25, opacity: 0 });
         } else {
             aboutmebtn.classList.remove("about-btn-on");
-            gsap.to(t1, { duration: 0.5, ease: "expo.out", y: -140 });
-            gsap.to(firsttxtblk, { duration: 0.25, opacity: 1 });
+            if (!aboutison) {
+                gsap.to(t1, { duration: 0.5, ease: "expo.out", y: -140 });
+                gsap.to(firsttxtblk, { duration: 0.25, opacity: 1 });
+            }
         }
     });
 }
