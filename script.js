@@ -132,6 +132,8 @@ function hidetotopbtn() {
 
 // -- ABOUT SECTION --
 
+const firsttxtblk = document.querySelector(".labelheader .txtblk");
+
 let aboutison = false;
 
 let topbar_observer = new IntersectionObserver(topbarcallback); //, { rootMargin: "-75% 0px 0px 0px" });
@@ -139,10 +141,15 @@ topbar_observer.observe(topbar);
 
 function topbarcallback(entries, observer) {
     entries.forEach(entry => {
-        if (entry.isIntersecting && aboutison) {
-            closeabout();
+        if (entry.isIntersecting) { // && aboutison) {}
+            // closeabout();
+            if (aboutison) { closeabout(); }
+            gsap.to(t1, { duration: 0.25, opacity: 1 });
+            gsap.to(firsttxtblk, { duration: 0.25, opacity: 0 });
         } else {
             aboutmebtn.classList.remove("about-btn-on");
+            gsap.to(t1, { duration: 0.25, opacity: 0 });
+            gsap.to(firsttxtblk, { duration: 0.25, opacity: 1 });
         }
     });
 }
@@ -286,8 +293,11 @@ function allimgCallback(entries, observer) {
         if (entry.isIntersecting) {
             const image = entry.target;
             image.src = image.dataset.src;
+            // image.onload = function () {
+            // image.classList.add("fade");
+            // }
             allimg_observer.unobserve(image);
-            console.log("load img " + entry.target.src);
+            // console.log("load img " + entry.target.src);
         }
     })
 }
@@ -305,7 +315,7 @@ function allvideoCallback(entries, observer) {
             const video = entry.target;
             video.src = video.dataset.src;
             allvideo_observer.unobserve(video);
-            console.log("load video " + entry.target.src);
+            // console.log("load video " + entry.target.src);
         }
     })
 }
