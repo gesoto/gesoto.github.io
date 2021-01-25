@@ -565,12 +565,50 @@ body {
 
 /*  */
 
+/* TOW GRID */
+
+.device-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: gold; */
+  margin: 0 auto;
+  padding: 5%;
+  width: 56%;
+  /* change width for overall size of device group */
+}
+.device-grid .device {
+  /* change margin and width proportionally 
+  for space between devices */
+  margin: 1%;
+  width: 23%;
+  font-size: 0;
+  position: relative;
+  /* background-color: aquamarine; */
+}
+.device-grid .device .bg {
+  width: 100%;
+  border-radius: 8px;
+}
+.device-grid .device .fg,
+.device-grid .device .reflection {
+  position: absolute;
+  width: 90%;
+  border-radius: 8px;
+  margin: 5%;
+}
+.device-grid .device .reflection {
+opacity: 0.25;
+}
+
+/*  */
+
 /* STACK COLORS */
 
 .section-0 .vstack,
 .section-0 .hstack,
 .section-0 .fullstack,
-.tow {
+.tow,
+.devices {
   /* background-color: rgb(161, 158, 151); */
   background-color: rgba(255, 255, 255, 0.1);
 }
