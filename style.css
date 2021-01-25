@@ -582,14 +582,14 @@ body {
   /* background-color: gold; */
   margin: 0 auto;
   padding: 5%;
-  width: 56%;
+  width: 70%;
   /* change width for overall size of device group */
 }
 .device-grid .device {
   /* change margin and width proportionally 
   for space between devices */
-  margin: 1%;
-  width: 23%;
+  margin: 4%;
+  width: 17%;
   font-size: 0;
   position: relative;
   /* background-color: aquamarine; */
