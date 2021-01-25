@@ -299,7 +299,7 @@ function allimgCallback(entries, observer) {
             // image.classList.add("fade");
             // }
             allimg_observer.unobserve(image);
-            console.log("load img " + entry.target.src);
+            // console.log("load img " + entry.target.src);
         }
     })
 }
@@ -317,7 +317,7 @@ function allvideoCallback(entries, observer) {
             const video = entry.target;
             video.src = video.dataset.src;
             allvideo_observer.unobserve(video);
-            console.log("load video " + entry.target.src);
+            // console.log("load video " + entry.target.src);
         }
     })
 }
