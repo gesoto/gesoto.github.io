@@ -111,6 +111,11 @@ body {
   padding: 20px 10px;
 }
 
+.topbar .link-btn {
+  /* height: 24px !important; */
+  font-size: 0;
+}
+
 .topbar .link-btn,
 .topbar .about-btn {
   user-select: none;
@@ -140,7 +145,7 @@ body {
   }
   .topbar .about-btn:hover {
     transform: scale(1.1);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
   }
 }
 
@@ -149,7 +154,7 @@ body {
   transform: scale(0.9);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
   .about-btn span {
     display: none;
   }
