@@ -224,14 +224,14 @@ function topbarcallback(entries, observer) {
         if (entry.isIntersecting) { // && aboutison) {}
             // closeabout();
             if (aboutison) { closeabout(); }
-            gsap.to(t1, { duration: 0.5, ease: "expo.out", y: 0 });
-            gsap.to(t1, { duration: 0.5, ease: "expo.out", opacity: 1 });
+            // gsap.to(t1, { duration: 0.25, ease: "power2.out", y: 0 });
+            gsap.to(t1, { duration: 0.25, opacity: 1 });
             gsap.to(firsttxtblk, { duration: 0.25, opacity: 0 });
         } else {
             aboutmebtn.classList.remove("about-btn-on");
             if (!aboutison) {
-                gsap.to(t1, { duration: 0.5, ease: "expo.out", y: -120 });
-                gsap.to(t1, { duration: 0.5, ease: "expo.out", opacity: 0 });
+                // gsap.to(t1, { duration: 0.25, ease: "power2.out", y: -150 });
+                gsap.to(t1, { duration: 0.25, opacity: 0 });
                 gsap.to(firsttxtblk, { duration: 0.25, opacity: 1 });
             }
         }
@@ -341,7 +341,7 @@ function callback(entries, observer) {
             if (totopbtnison) { hidetotopbtn() }
 
             if (a != current_index) {
-                console.log("changed current_index to from " + current_index + " to " + a);
+                // console.log("changed current_index to from " + current_index + " to " + a);
                 gsap.fromTo(indexbtn, { scale: 0.7 }, { duration: 1, ease: "elastic.out(1, 0.4)", scale: 1 });
                 current_index = a;
                 setIndex(a);
