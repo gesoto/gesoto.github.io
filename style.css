@@ -4,6 +4,7 @@
 
 :root {
   --content-radius: 8px;
+  --about-text-color: rgb(220, 220, 220);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -498,8 +499,9 @@ body {
   /* white-space: nowrap; */
   /* line-height: 0.95; */
   /* margin-bottom: 50px; */
-  margin-top: 180px;
+  margin-top: 200px;
   /* opacity: 0; */
+  color: rgb(194, 178, 178);
 }
 .t1b {
   /* background: blue; */
@@ -510,9 +512,10 @@ body {
   /* font-weight: 400; */
   /* line-height: auto; */
   margin-bottom: 35px;
+  color: var(--about-text-color);
 }
 .about {
-  color: white;
+  color: var(--about-text-color);
   overflow: hidden;
   height: 0;
   font-family: "Open Sans", sans-serif;
@@ -546,7 +549,7 @@ body {
 .desc a,
 .t1b a {
   cursor: pointer;
-  color: rgb(172, 167, 151);
+  color: rgb(194, 178, 178);
   transition: all 0.2s ease-out;
 }
 
@@ -555,7 +558,7 @@ body {
   .desc a:hover,
   .t1b a:hover {
     color: black;
-    background-color: rgb(172, 167, 151);
+    background-color: rgb(194, 178, 178);
   }
 }
 
