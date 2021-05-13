@@ -10,6 +10,13 @@
 
 <body>
 
+  <!-- party on -->
+  <div id="bubbles"></div>
+  <script src="three/js/three.js"></script>
+  <script src="three/js/Projector.js"></script>
+  <script src="three/js/CanvasRenderer.js"></script>
+  <script src="three/bubbles.js"></script>
+
   <div class="main">
 
     <!-- <div class="project-btn">
@@ -23,82 +30,51 @@
         <img src="src/misc/x.svg">
       </div>
     </div> -->
+
     <div class="totop-btn">
-      <div class="totop-btn-container" onclick="backtoabout()">
+      <div class="totop-btn-container" onclick="backtotop()">
         <img src="src/misc/arrow-up.svg">
       </div>
     </div>
-    <div class="desc">
+
+    <div class="desc" onclick="toggleinfo()">
       <div class="desc-content">
-        <div class="titles">
-          <div></div>
-          <div></div>
-        </div>
+        <div class="title"></div>
         <div class="dbody"></div>
         <div class="dtags"></div>
       </div>
     </div>
 
     <div class="fixed-buttons">
-
-      <div class="index-button">
+      <div class="index-button" onclick="toggleinfo()">
         <div class="item-container">
-          <!-- <div class="item">
-            <div onclick="backtotop()">Top / About Me</div>
-          </div> -->
           <div class="item">
-            <div onclick="toggleIndex(0)">Embedded User Interfaces</div>
+            <div>Embedded User Interfaces</div>
           </div>
           <div class="item">
-            <div onclick="toggleIndex(1)">UI Design Systems</div>
+            <div>UI Design Systems & Tools</div>
           </div>
           <div class="item">
-            <div onclick="toggleIndex(2)">10-foot User Interfaces</div>
+            <div>Smart Displays UIs</div>
           </div>
           <div class="item">
-            <div onclick="toggleIndex(3)">Voice User Interfaces</div>
-          </div>
-          <!-- <div class="item">
-            <div onclick="toggleIndex(4)"> Smartphone Operating Systems</div>
-          </div> -->
-          <div class="item">
-            <div onclick="toggleIndex(4)">Animation</div>
+            <div>Voice User Interfaces</div>
           </div>
           <div class="item">
-            <div onclick="toggleIndex(5)">Mobile Game Develpment</div>
+            <div>Animation</div>
+          </div>
+          <div class="item">
+            <div>Games</div>
           </div>
         </div>
       </div>
-
-      <div class="info-button" onclick="toggleinfo()">
-
-        <!-- <div class="infosvg"> -->
-        <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-info">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="16" x2="12" y2="12"></line>
-          <line x1="12" y1="8" x2="12.01" y2="8"></line>
-        </svg>
-        <!-- </div> -->
-        <!-- <div class="xsvg"> -->
-        <svg class="xsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-x">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-        <!-- </div> -->
-        <div class="label">Info</div>
-      </div>
-
     </div>
 
     <div class="child">
 
       <div class="core">
 
-        <div class="topbar">
+        <div class="topbar" id="top">
           <a class="about-btn" onclick="toggleabout()"><span>Salvador Soto</span></a>
           <a class="link-btn" href="https://github.com/gesoto" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -129,15 +105,13 @@
 
 
 
+
         <div class="labelheader">
-          <div class="txtblk">
-            <h1>Embedded User Interfaces</h1>
-          </div>
           <div class="t1">
-            <div class="t1a">Salvador Soto</div>
-            <div class="t1b">I’m a Product Designer focused on Rapid Prototyping and Motion Design, I like
-              designing, coding, and tinkering.
-              <a href="#" onclick="toggleabout()"><span>More about me.</span></a>
+            <div class="t1a"><a onclick="toggleparty()"></a></div>
+            <div class="t1b">My name is Salvador Soto, I’m a Product Designer focused on Rapid Prototyping and UI
+              Motion, I like designing, coding, and tinkering.
+              <a onclick="toggleabout()"><span>More about me?</span></a>
             </div>
           </div>
         </div>
@@ -153,16 +127,15 @@
             <a href="https://www.engadget.com/2011-06-23-prototype-dual-screened-2-in-1-android-smartpad-from-imerj-previ.html"
               target="_blank">Dual-Screen Smartphone</a> at Flextronics.
             Conceptualizing and prototyping multiple Touch, D-Pad, and
-            <a href="#sec3" onclick="showtotopbtn()">Voice User Interfaces</a>, developed into full
-            <a href="#sec2" onclick="showtotopbtn()">10-foot User Interfaces</a>, Smart displays, and TV products
-            for Hisense, Toshiba, and Sharp.
-            The creation of <a href="#sec1" onclick="showtotopbtn()">UI Design Systems</a> and enterprise applications
-            for Katerra's Advanced Buildings and 
-            <a href="#sec0" onclick="showtotopbtn()">IoT products</a> ecosystem.
+            <a onclick="gotoindex('voiceuis')">Voice User Interfaces</a>, developed into full
+            <a onclick="gotoindex('smartdisplays')">10-foot User Interfaces</a>, Smart displays, and TV
+            products for Hisense, Toshiba, and Sharp.
+            The creation of <a onclick="gotoindex('uidesignsystems')">UI Design Systems</a> and enterprise
+            applications for Katerra's Advanced Buildings and
+            <a onclick="gotoindex('embeddeduis')">IoT products</a> ecosystem.
             <br><br>
             Over my 10 past years of experience I've gained insightful experience by working together with multiple
-            teams across
-            different time-zones, languages, and regions, such as Mexico, US, Canada, India, and China.
+            teams across different time-zones, languages, and regions, such as Mexico, US, Canada, India, and China.
             <br><br>
             My contributions have listed me as a registered inventor in multiple technology & <a
               href="https://patents.justia.com/inventor/salvador-soto" target="_blank">innovation patents</a>, and
@@ -172,6 +145,7 @@
             <br><br>
             I'm very passionate about designing and prototyping new concepts, innovative experiences, and meaningful
             solutions, driven by my immense curiosity to understand and explore multiple disciplines outside my work.
+            <br><br><a onclick="toggleabout()"><span></span></a>
           </div>
         </div>
 
@@ -179,22 +153,192 @@
 
         <div class="coreitems">
 
-          <div class="coreitem section-0" id="sec0">
+          <div class="index-grid" id="">
+
+            <div class="index-item item-embeddeduis" onclick="gotoindex('embeddeduis')">
+              <div class="groups">
+                <div class="group">
+                  <video class="bg" src="src/kat/faceplate/vid.mp4" type="video/mp4" playsinline autoplay loop
+                    muted></video>
+                  <img class="fg" src="src/misc/towdual.png" alt="">
+                </div>
+              </div>
+              <div class="label">Embeded User Interfaces for IoT devices</div>
+            </div>
+
+            <div class="index-item item-uidesignsystems" onclick="gotoindex('uidesignsystems')">
+              <div class="groups">
+                <div class="group">
+                  <img class="bg" src="src/kat/07.jpg" alt="">
+                  <img class="fg" src="src/misc/ipad.png" alt="">
+                </div>
+                <div class="group">
+                  <video class="bg" src="src/kat/11b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                  <img class="fg" src="src/misc/iphone.png" alt="">
+                </div>
+              </div>
+              <div class="label">UI Design Systems for Desktop & Mobile Building Management Tools</div>
+            </div>
+
+            <div class="index-item item-smartdisplays" onclick="gotoindex('smartdisplays')">
+              <div class="groups">
+                <div class="group">
+                  <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                  <img class="fg" src="src/misc/tv.png" alt="">
+                </div>
+              </div>
+              <div class="label">HTML & Android based Smart Display Interfaces and Operating Systems</div>
+            </div>
+
+            <div class="index-item item-voiceuis" onclick="gotoindex('voiceuis')">
+              <div class="groups">
+                <div class="group">
+                  <lottie-player class="bg" src="src/audio.json" background="transparent" speed=".4" loop autoplay>
+                  </lottie-player>
+                  <img class="fg" src="src/misc/tv.png" alt="">
+                </div>
+              </div>
+              <div class="label">Speech & Voice Audio Interfaces for Displays</div>
+            </div>
+
+            <div class="index-item item-animation" onclick="gotoindex('animation')">
+              <div class="groups">
+                <div class="group">
+                  <video class="bg" src="src/disp/a1b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                  <img class="fg" src="src/misc/ipad.png" alt="">
+                </div>
+              </div>
+              <div class="label">Animations, 3D, and Interactivity</div>
+            </div>
+
+            <div class="index-item item-games" onclick="gotoindex('games')">
+              <div class="groups">
+                <div class="group">
+                  <video class="bg" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                  <img class="fg" src="src/misc/iphone-8.png" alt="">
+                </div>
+                <div class="group">
+                  <video class="bg" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                  <img class="fg" src="src/misc/iphone.png" alt="">
+                </div>
+              </div>
+              <div class="label">Game Design & AR</div>
+            </div>
+
+
+
+            <!-- <div class="index-item"></div>
+            <div class="index-item"></div>
+            <div class="index-item"></div> -->
+
+            <!-- <div>
+              <div onclick="gotoindex('uidesignsystems')" class="indexitem indexsystems">
+                <img class="bgg" src="src/indx/indx2.jpg" alt="">
+                <div class="comp">
+                  <img class="" src="src/misc/iphone.png" alt="">
+                  <video class="" src="src/kat/11b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                </div>
+              </div>
+              <div onclick="gotoindex('uidesignsystems')" class="indxft">
+                <p>UI Design Systems for Desktop & Mobile Building Management Tools</p>
+              </div>
+            </div>
+
+            <div>
+              <div onclick="gotoindex('smartdisplays')" class="indexitem indextv">
+                <video class="" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+                <img class="" src="src/indx/indx3.jpg" alt="">
+              </div>
+              <div onclick="gotoindex('smartdisplays')" class="indxft">
+                <p>HTML & Android based Smart Display Interfaces and Operating Systems. </p>
+              </div>
+            </div> -->
+
+
+
+            <!-- <div onclick="gotoindex('uidesignsystems')" class="indxft">
+              <p>UI Design Systems for Desktop & Mobile Building Management Tools</p>
+            </div>
+
+            <div onclick="gotoindex('smartdisplays')" class="indxft">
+              <p>HTML & Android based Smart Display Interfaces and Operating Systems. </p>
+            </div> -->
+
+            <!-- <div onclick="gotoindex('voiceuis')" class="indexitem indexaudio">
+              <lottie-player src="src/audio.json" background="transparent" speed=".4" loop autoplay></lottie-player>
+            </div>
+
+            <div onclick="gotoindex('animation')" class="indexitem indexanim">
+              <video class="" src="src/disp/a1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            </div>
+
+            <div onclick="gotoindex('games')" class="indexitem indexar">
+              <div class="comp2">
+                <img class="" src="src/misc/iphone-8.png" alt="">
+                <video class="" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+              </div>
+              <div class="comp1">
+                <img class="" src="src/misc/iphone.png" alt="">
+                <video class="" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+              </div>
+            </div> -->
+
+            <!-- <div onclick="gotoindex('voiceuis')" class="indxft">
+              <p>Speech & Voice Audio Interfaces for Displays</p>
+            </div>
+
+            <div onclick="gotoindex('animation')" class="indxft">
+              <p>Animations, 3D, and Interactivity</p>
+            </div>
+
+            <div onclick="gotoindex('games')" class="indxft">
+              <p>Personal Projects <br> Game Design & AR</p>
+            </div> -->
+
+          </div>
+
+          <!--  -->
+
+          <div class="txtblk" id="embeddeduis">
+            <div class="title">
+              <h1>Embedded User Interfaces</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <!-- <p>A unique form-factor visual interface for an interconnected HVAC system in KATERRA's Building Systems. See More</p> -->
+            <div class="tags">
+              <div>UI Design</div>
+              <div>UX Prototyping</div>
+              <div>Motion Design</div>
+              <div>UI Component Development</div>
+              <div>QT</div>
+              <div>Embedded Linux</div>
+            </div>
+          </div>
+
+
+
+          <div class="coreitem section-0">
             <div class="fullstack">
               <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/01.jpg" alt="">
             </div>
           </div>
-
-          <!-- <div class="coreitem section-0 tow">
-            <div class="container">
-              <img class="faceplate" ph="src/placeholder/100-100.jpg" src="src/kat/faceplate/img.jpg" alt="">
-              <div class="videomask">
-                <video class="" po="src/placeholder/100-133.jpg" src="src/kat/faceplate/vid.mp4" type="video/mp4"
-                  playsinline autoplay loop muted></video>
-              </div>
-              <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-            </div>
-          </div> -->
 
           <div class="coreitem section-0 devices">
             <div class="device-grid">
@@ -247,6 +391,17 @@
             </div>
           </div>
 
+          <!-- <div class="coreitem section-0 tow" >
+            <div class="container">
+              <img class="faceplate" ph="src/placeholder/100-100.jpg" src="src/kat/faceplate/img.jpg" alt="">
+              <div class="videomask">
+                <video class="" po="src/placeholder/100-133.jpg" src="src/kat/faceplate/vid.mp4" type="video/mp4"
+                  playsinline autoplay loop muted></video>
+              </div>
+              <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
+            </div>
+          </div> -->
+
           <div class="coreitem section-0">
             <div class="hstack">
               <img class="lozad" src="src/placeholder/100-177.jpg" data-src="src/kat/03a.jpg" alt="">
@@ -260,12 +415,22 @@
             </div>
           </div>
 
-          <div class="coreitem section-0 framehstack">
+          <!-- <div class="coreitem section-0 framehstack">
             <div class="vstack w50">
               <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/05a.jpg" alt="">
             </div>
-            <div class="fullstack w50">
+            <div class="vstack w50">
               <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/kat/05b.jpg" alt="">
+            </div>
+          </div> -->
+          <div class="coreitem section-0">
+            <div class="hstack">
+              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/05a.jpg" alt=""
+                style="width: 42%;">
+              <!-- </div> -->
+              <!-- <div class="vstack w50"> -->
+              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/kat/05b.jpg" alt=""
+                style="width: 38.5%;">
             </div>
           </div>
 
@@ -273,14 +438,49 @@
             <div class="vstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/06.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
+              <!-- style="width: 47.5%;"></video> -->
+              <!-- </div> -->
+              <!-- </div> -->
+
+              <!-- <div class="coreitem section-0"> -->
+              <!-- <div class="vstack"> -->
+              <!-- <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/01.jpg" alt="" style="width: 36%;"> -->
             </div>
           </div>
 
 
           <!--  -->
 
-          <div class="txtblk">
-            <h1>UI Design Systems</h1>
+          <div class="txtblk" id="uidesignsystems">
+            <div class="title">
+              <h1>UI Design Systems & Tools</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="tags">
+              <div>UI Design</div>
+              <div>UX Prototyping</div>
+              <div>Design Systems</div>
+              <div>Web Component Development</div>
+              <div>Storybook</div>
+              <div>Desktop & Mobile</div>
+            </div>
           </div>
 
           <!-- <div class="coreitem section-1">
@@ -289,20 +489,37 @@
             </div>
           </div> -->
 
-          <div class="coreitem section-1" id="sec1">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt="">
+
+
+
+          <div class="coreitem section-1">
+            <div class="fullstack">
+              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/12.jpg" alt="">
+              <!-- style="width: 55%;" -->
+              <!-- <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt=""
+                style="width: 27.3%;"> -->
             </div>
           </div>
 
           <div class="coreitem section-1">
             <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-61.jpg" data-src="src/kat/12b.jpg" alt="" style="width: 55%;">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt=""
-                style="width: 27.3%;">
+              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt=""
+                style="width: 37.5%;">
+              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt=""
+                style="width: 37.5%;">
             </div>
           </div>
+
+
+          <!-- <div class="coreitem section-1 framehstack">
+            <div class="vstack" style="width: 42%;">
+              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt="">
+              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt="">
+            </div>
+            <div class="vstack" style="width: 57%;">
+              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt="">
+            </div>
+          </div> -->
 
           <div class="coreitem section-1">
             <div class="hstack">
@@ -315,9 +532,9 @@
 
 
           <div class="coreitem section-1">
-            <div class="fullstack">
+            <div class="vstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/13.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
+                playsinline autoplay loop muted style="width: 85%;"></video>
             </div>
           </div>
 
@@ -349,39 +566,41 @@
 
 
 
-          <div class="coreitem section-1 framehstack">
-            <div class="fullstack w33">
+          <!-- <div class="coreitem section-1 framehstack">
+            <div class="vstack w33">
               <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside.jpg" alt="">
             </div>
             <div class="vstack w66">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14b.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-          <!-- <div class="coreitem section-1">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside.jpg" alt="">
-
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14b.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
             </div>
           </div> -->
 
-          <div class="coreitem section-1 framehstack">
+          <div class="coreitem section-1">
+            <div class="hstack">
+              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside.jpg" alt=""
+                style="width: 25.5%;">
+              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14b.mp4" type="video/mp4"
+                playsinline autoplay loop muted style="width: 55%;"></video>
+            </div>
+          </div>
+
+          <!-- <div class="coreitem section-1 framehstack">
             <div class="vstack w66">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14a.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
             </div>
-            <div class="fullstack w33">
+            <div class="vstack w33">
               <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside2.jpg" alt="">
             </div>
-          </div>
-          <!-- <div class="coreitem section-1 ">
+          </div> -->
+
+          <div class="coreitem section-1 ">
             <div class="vstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14a.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
+                playsinline autoplay loop muted style="width: 85%;"></video>
             </div>
-          </div> -->
+          </div>
 
 
 
@@ -404,12 +623,40 @@
 
           <!--  -->
 
-          <div class="txtblk">
-            <h1>10-foot User Interfaces</h1>
+          <div class="txtblk" id="smartdisplays">
+            <div class="title">
+              <h1>Smart Displays UIs</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="tags">
+              <div>UI Design</div>
+              <div>UX Prototyping</div>
+              <div>Motion Design</div>
+              <div>10-foot User Interfaces</div>
+              <div>High Fidelity Prototyping</div>
+              <div>Android & HTML</div>
+            </div>
           </div>
 
-          <div class="coreitem section-2" id="sec2">
-            <div class="vstack">
+          <div class="coreitem section-2">
+            <div class="fullstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u1.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
             </div>
@@ -430,7 +677,7 @@
             <div class="hstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u3.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u7.mp4" type="video/mp4"
+              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u8.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
             </div>
           </div>
@@ -455,18 +702,22 @@
 
           <div class="coreitem section-2">
             <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u5.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
+              <!-- <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u5.mp4" type="video/mp4"
+                playsinline autoplay loop muted></video> -->
+              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/disp/a1.jpg" alt="">
             </div>
           </div>
 
           <div class="coreitem section-2 framehstack">
-            <div class="vstack w60">
+            <div class="vstack w50">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u6.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
+              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u9.mp4" type="video/mp4"
+                playsinline autoplay loop muted></video>
             </div>
-            <div class="fullstack w40">
+            <div class="vstack w50">
               <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/disp/p1.jpg" alt="">
+
             </div>
           </div>
 
@@ -474,11 +725,38 @@
 
           <!--  -->
 
-          <div class="txtblk">
-            <h1>Voice User Interfaces</h1>
+          <div class="txtblk" id="voiceuis">
+            <div class="title">
+              <h1>Voice User Interfaces</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="tags">
+              <div>Voice Interface</div>
+              <div>Animation</div>
+              <div>UX Prototyping</div>
+              <div>High Fidelity Prototyping</div>
+              <div>HTML</div>
+            </div>
           </div>
 
-          <div class="coreitem section-3" id="sec3">
+          <div class="coreitem section-3">
             <div class="fullstack lottie">
               <lottie-player src="src/audio.json" background="transparent" speed=".4" style="width: 70%; height: 10%"
                 loop autoplay></lottie-player>
@@ -537,48 +815,40 @@
 
           <!--  -->
 
-          <!-- <div class="txtblk">
-            <h1>Smartphone Operating Systems</h1>
-          </div>
 
-          <div class="coreitem section-4" id="sec4">
-            <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-47.jpg" data-src="src/phone/p1.jpg" alt="">
+          <div class="txtblk" id="animation">
+            <div class="title">
+              <h1>Animation</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </div>
-          </div>
-
-          <div class="coreitem section-4 framehstack">
-            <div class="fullstack w50">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/phone/p2.jpg" alt="">
-            </div>
-            <div class="fullstack w50">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/phone/p3.jpg" alt="">
+            <div class="tags">
+              <div>Motion Design</div>
+              <div>Animation</div>
+              <div>After Effects</div>
+              <div>Three.js</div>
+              <div>Cinema 4D</div>
             </div>
           </div>
 
           <div class="coreitem section-4">
             <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-47.jpg" data-src="src/phone/p4.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="coreitem section-4 framehstack">
-            <div class="fullstack w50">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/phone/p8.jpg" alt="">
-            </div>
-            <div class="fullstack w50">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/phone/p7.jpg" alt="">
-            </div>
-          </div> -->
-
-          <!--  -->
-
-          <div class="txtblk">
-            <h1>Animation</h1>
-          </div>
-
-          <div class="coreitem section-4" id="sec4">
-            <div class="vstack">
               <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/a2.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
             </div>
@@ -621,7 +891,8 @@
                 playsinline autoplay loop muted></video>
             </div>
             <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/anim/3.jpg" alt="">
+              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/anim/3.jpg" alt="">
+              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/anim/4.jpg" alt="">
             </div>
           </div>
 
@@ -640,14 +911,42 @@
 
           <!--  -->
 
-          <div class="txtblk">
-            <h1>Mobile Game Design & Development</h1>
+          <div class="txtblk" id="games">
+            <div class="title">
+              <h1>Games</h1>
+              <!-- <div class="info-button" onclick="toggleinfo()">
+                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="label">Info</div>
+              </div> -->
+              <div class="more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-arrow-right">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="tags">
+              <div>Game Design & Development</div>
+              <div>2D & 3D Prototyping</div>
+              <div>Unity</div>
+              <div>AR</div>
+            </div>
           </div>
 
-          <div class="coreitem section-5" id="sec5">
+          <div class="coreitem section-5">
             <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f1.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f2.jpg" alt="">
+              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f1.jpg" alt=""
+                style="width: 31.5%;">
+              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f2.jpg" alt=""
+                style="width: 31.5%;">
 
             </div>
           </div>
@@ -658,6 +957,28 @@
                 type="video/mp4" playsinline autoplay loop muted style="width: 22.7%;"></video>
               <video class="lozad" poster="src/placeholder/100-100.jpg" data-src="src/games/u3.mp4" type="video/mp4"
                 playsinline autoplay loop muted></video>
+            </div>
+          </div>
+
+
+
+          <div class="coreitem section-5">
+            <div class="hstack">
+              <!-- <div class="phonecompo"> -->
+              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
+              <video class="" src="src/games/ar1.mp4" type="video/mp4" playsinline autoplay loop muted
+                style="width: 19.2%;"></video>
+              <!-- </div> -->
+              <!-- <div class="phonecompo"> -->
+              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
+              <video class="" src="src/games/ar2.mp4" type="video/mp4" playsinline autoplay loop muted
+                style="width: 19.2%;"></video>
+              <!-- </div> -->
+              <!-- <div class="phonecompo"> -->
+              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
+              <video class="" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted
+                style="width: 19.2%;"></video>
+              <!-- </div> -->
             </div>
           </div>
 
@@ -675,6 +996,7 @@
             </div>
           </div>
 
+
           <!-- <div class="coreitem section-5">
             <div class="fullstack">
               <img class="lozad" src="src/placeholder/100-47.jpg" data-src="src/games/f3.jpg" alt="">
@@ -684,7 +1006,7 @@
           <!--  -->
 
           <div class="footer">
-            <div class="totop-btn">
+            <div class="totop-btn-foot">
               <div class="totop-btn-container" onclick="backtotop()">
                 <img src="src/misc/arrow-up.svg">
               </div>
