@@ -44,7 +44,7 @@ function tempcancelindexbutton() {
 // ---- PARTY MODE ----
 
 let partyon = false;
-const msg1 = "Hey there, welcome!";
+const msg1 = "Hey there, Welcome!";
 const msg2 = "Let's get this party started! 🥳";
 t1a.innerHTML = msg1;
 cancelAnimationFrame(rnd);
@@ -104,11 +104,11 @@ function setIndex(n) {
 }
 
 indexbtn.addEventListener('mouseover', function () {
-    gsap.to(indexbtn, { duration: 0.25, ease: "power2.out", scale: 1.1 });
+    // gsap.to(indexbtn, { duration: 0.25, ease: "power2.out", scale: 1.1 });
 });
 
 indexbtn.addEventListener('mouseout', function () {
-    gsap.to(indexbtn, { duration: 0.25, ease: "power2.out", scale: 1.0 });
+    // gsap.to(indexbtn, { duration: 0.25, ease: "power2.out", scale: 1.0 });
 });
 
 let t1_observer = new IntersectionObserver(t1callback, { rootMargin: "0px 0px 2000px 0px" });
@@ -256,7 +256,7 @@ function topbarcallback(entries, observer) {
         if (entry.isIntersecting) {
             if (aboutison) { closeabout(); }
         } else {
-            aboutmebtn.classList.remove("about-btn-on");
+            // aboutmebtn.classList.remove("about-btn-on");
         }
     });
 }
@@ -265,7 +265,7 @@ function openabout() {
     gsap.to(about, { duration: 0.5, ease: "expo.out", height: "auto" });
     gsap.to(about, { duration: 0.25, ease: "linear", opacity: 1 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "50px" });
-    aboutmebtn.classList.add("about-btn-on");
+    // aboutmebtn.classList.add("about-btn-on");
     t1babout.style.display = "none";
     aboutison = true;
 }
@@ -274,7 +274,7 @@ function closeabout() {
     gsap.to(about, { duration: 0.5, ease: "expo.out", height: "0" });
     gsap.to(about, { duration: 0.25, ease: "linear", opacity: 0 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "200px" });
-    aboutmebtn.classList.remove("about-btn-on");
+    // aboutmebtn.classList.remove("about-btn-on");
     t1babout.style.display = "inline";
     aboutison = false;
 }
