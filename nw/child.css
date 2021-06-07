@@ -61,10 +61,14 @@ main {
 
 /* Layout content as a strip inside a block */
 
+.b-block.strip {
+  height: 600px;
+}
+
 .b-block.strip .itm,
 .s-block.strip .itm {
   padding: 3%;
-  height: 50%;
+  height: 60%;
 }
 
 /* Text content inside a block */
@@ -111,6 +115,9 @@ main {
 
   .b-block {
     height: 75vw;
+  }
+  .b-block.strip {
+    height: 60vw;
   }
 }
 
