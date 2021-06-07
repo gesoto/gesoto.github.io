@@ -392,11 +392,11 @@ function testcallback(entries, observer) {
             // console.log(entry.target)
             entry.target.style = "visibility: visible;"
             entry.target.play();
-            console.log("play " + entry.target.src);
+            // console.log("play " + entry.target.src);
         } else {
             entry.target.style = "visibility: hidden;"
             entry.target.pause();
-            console.log("pause " + entry.target.src);
+            // console.log("pause " + entry.target.src);
         }
     })
 }
@@ -417,38 +417,38 @@ function testcallback(entries, observer) {
 
 // // Testing to lazyload img
 
-// const allimg = document.querySelectorAll('img.lozad');
-// let allimg_observer = new IntersectionObserver(allimgCallback, { rootMargin: "0px 0px 1000px 0px" });
-// allimg.forEach(i => { allimg_observer.observe(i) });
+const allimg = document.querySelectorAll('img');
+let allimg_observer = new IntersectionObserver(allimgCallback, { rootMargin: "0px 0px 1000px 0px" });
+allimg.forEach(i => { allimg_observer.observe(i) });
 
-// function allimgCallback(entries, observer) {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             const image = entry.target;
-//             image.src = image.dataset.src;
-//             // image.onload = function () {
-//             // image.classList.add("fade");
-//             // }
-//             allimg_observer.unobserve(image);
-//             // console.log("load img " + entry.target.src);
-//         }
-//     })
-// }
+function allimgCallback(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const image = entry.target;
+            image.src = image.dataset.src;
+            // image.onload = function () {
+            // image.classList.add("fade");
+            // }
+            allimg_observer.unobserve(image);
+            // console.log("load img " + entry.target.src);
+        }
+    })
+}
 
 
 // Testing to lazyload video
 
-// const allvideo = document.querySelectorAll('video.lozad');
-// let allvideo_observer = new IntersectionObserver(allvideoCallback, { rootMargin: "0px 0px 2000px 0px" });
-// allvideo.forEach(i => { allvideo_observer.observe(i) });
+const allvideo = document.querySelectorAll('video');
+let allvideo_observer = new IntersectionObserver(allvideoCallback, { rootMargin: "0px 0px 2000px 0px" });
+allvideo.forEach(i => { allvideo_observer.observe(i) });
 
-// function allvideoCallback(entries, observer) {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             const video = entry.target;
-//             video.src = video.dataset.src;
-//             allvideo_observer.unobserve(video);
-//             // console.log("load video " + entry.target.src);
-//         }
-//     })
-// }
+function allvideoCallback(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const video = entry.target;
+            video.src = video.dataset.src;
+            allvideo_observer.unobserve(video);
+            // console.log("load video " + entry.target.src);
+        }
+    })
+}
