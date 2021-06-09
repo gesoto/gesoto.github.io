@@ -390,11 +390,11 @@ function testcallback(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             // console.log(entry.target)
-            entry.target.style = "visibility: visible;"
+            // entry.target.style = "visibility: visible;"
             entry.target.play();
             // console.log("play " + entry.target.src);
         } else {
-            entry.target.style = "visibility: hidden;"
+            // entry.target.style = "visibility: hidden;"
             entry.target.pause();
             // console.log("pause " + entry.target.src);
         }
@@ -417,7 +417,7 @@ function testcallback(entries, observer) {
 
 // // Testing to lazyload img
 
-const allimg = document.querySelectorAll('img');
+const allimg = document.querySelectorAll('[iph]');
 let allimg_observer = new IntersectionObserver(allimgCallback, { rootMargin: "0px 0px 1000px 0px" });
 allimg.forEach(i => { allimg_observer.observe(i) });
 
@@ -438,7 +438,7 @@ function allimgCallback(entries, observer) {
 
 // Testing to lazyload video
 
-const allvideo = document.querySelectorAll('video');
+const allvideo = document.querySelectorAll('[vph]');
 let allvideo_observer = new IntersectionObserver(allvideoCallback, { rootMargin: "0px 0px 2000px 0px" });
 allvideo.forEach(i => { allvideo_observer.observe(i) });
 

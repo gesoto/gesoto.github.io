@@ -1,0 +1,235 @@
+/* INDEX GRID */
+
+/* grid general */
+
+.index-grid {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  margin-top: 150px;
+  margin-bottom: 150px;
+  cursor: pointer;
+}
+
+.index-grid .index-item {
+  /* border: 1px solid pink; */
+  background: rgb(73, 70, 70); /* color is placeholder */
+  height: 450px;
+  /* height: 300px; */
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* grid sub-items general */
+
+.index-grid .index-item .groups {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.index-grid .index-item .group {
+  /* border: 1px solid green; */
+  width: 40%; /* width is placeholder */
+  position: relative;
+  font-size: 0;
+}
+
+.index-grid .index-item .group .bg {
+  width: 20%; /* width is placeholder */
+  position: absolute;
+  z-index: -1;
+}
+
+.index-grid .index-item .group .fg {
+  width: 100%;
+}
+
+.index-grid .index-item .label {
+  background: rgb(245, 245, 245);
+  color: var(--background-color);
+  padding: 5% 10%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  /* text-decoration: underline; */
+}
+
+/* grid sub-items animation */
+
+.index-grid .index-item .groups,
+.index-grid .index-item .group,
+.index-grid .index-item .label {
+  transition: all 0.2s ease-out;
+}
+
+@media (hover: hover) {
+  .index-grid .index-item:hover .label {
+    transform: translateY(-100%);
+  }
+  .index-grid .index-item:hover .groups {
+    transform: scale(0.9) translateY(-12%);
+  }
+  .index-grid .item-uidesignsystems:hover .groups .group:nth-child(1) {
+    transform: translateX(0);
+  }
+  .index-grid .item-uidesignsystems:hover .groups .group:nth-child(2) {
+    transform: translateX(0);
+  }
+  .index-grid .item-games:hover .groups .group:nth-child(1) {
+    transform: translateX(0);
+  }
+  .index-grid .item-games:hover .groups .group:nth-child(2) {
+    transform: translateX(0);
+  }
+}
+
+/* grid breakpoints */
+
+@media only screen and (max-width: 1200px) {
+  .index-grid .index-item {
+    /* height: 25vw; */
+    height: 37.5vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .index-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .index-grid .index-item {
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* leaving grid as 2 rows on phone for now */
+  .index-grid {
+    /* grid-template-columns: 1fr; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /* .index-grid .index-item {
+    height: 75vw;
+  } */
+}
+
+/* grid sub-items specific */
+
+/* item embeddeduis */
+
+.index-grid .item-embeddeduis {
+  background-color: rgb(30, 30, 30);
+}
+.index-grid .item-embeddeduis .group {
+  width: 46%;
+}
+.index-grid .item-embeddeduis .group .bg {
+  width: 22%;
+  left: 22%;
+  top: 26%;
+}
+
+/* item uidesignsystems */
+
+.index-grid .item-uidesignsystems {
+  background-color: rgb(223, 214, 193);
+}
+.index-grid .item-uidesignsystems .group:nth-child(1) {
+  width: 64%;
+  transform: translateX(10%);
+}
+.index-grid .item-uidesignsystems .group:nth-child(2) {
+  width: 28%;
+  transform: translateX(-40%);
+}
+.index-grid .item-uidesignsystems .group:nth-child(1) .bg {
+  width: 78%;
+  left: 11.1%;
+  top: 13.8%;
+}
+.index-grid .item-uidesignsystems .group:nth-child(2) .bg {
+  width: 64%;
+  left: 18%;
+  top: 7%;
+}
+
+/* item smartdisplays */
+
+.index-grid .item-smartdisplays {
+  background-color: rgb(62, 139, 158);
+}
+.index-grid .item-smartdisplays .group {
+  width: 100%;
+}
+.index-grid .item-smartdisplays .group .bg {
+  width: 72%;
+  left: 14%;
+  top: 20.1%;
+}
+
+/* item voiceuis */
+
+.index-grid .item-voiceuis {
+  background-color: rgb(202, 177, 192);
+}
+.index-grid .item-voiceuis .group {
+  width: 100%;
+}
+.index-grid .item-voiceuis .group .fg {
+  visibility: hidden;
+  /* mix-blend-mode: screen; */
+}
+.index-grid .item-voiceuis .group .bg {
+  width: 70%;
+  left: 28%;
+}
+
+/* item animation */
+
+.index-grid .item-animation {
+  background-color: rgb(153, 149, 149);
+}
+.index-grid .item-animation .group {
+  width: 70%;
+}
+.index-grid .item-animation .group .bg {
+  width: 78%;
+  left: 11.1%;
+  top: 13.8%;
+}
+
+/* item games */
+
+.index-grid .item-games {
+  background-color: rgb(180, 178, 194);
+}
+.index-grid .item-games .group:nth-child(1) {
+  width: 26%;
+  transform: translateX(20%);
+}
+.index-grid .item-games .group:nth-child(2) {
+  width: 34%;
+  transform: translateX(-20%);
+}
+.index-grid .item-games .group:nth-child(1) .bg {
+  width: 82%;
+  left: 9%;
+  top: 13%;
+}
+.index-grid .item-games .group:nth-child(2) .bg {
+  width: 64%;
+  left: 18%;
+  top: 7%;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
