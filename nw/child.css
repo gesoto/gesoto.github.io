@@ -43,7 +43,7 @@ main {
 /* Layout content inside a block */
 
 .block-cont-w-inset {
-  width: 90%;
+  width: 80%;
 }
 
 .block-cont-w-full {
@@ -51,7 +51,7 @@ main {
 }
 
 .block-cont-h-inset {
-  height: 90%;
+  height: 80%;
 }
 
 .block-cont-h-full {
@@ -174,12 +174,12 @@ main {
   /* background: red; */
   position: relative;
 }
-.itm.tow img {
+.itm.tow .bg {
   width: 100%;
   /* opacity: 0.5; */
   /* background: rgb(134, 105, 105); */
 }
-.itm.tow video {
+.itm.tow .fg {
   width: 90%;
   position: absolute;
   margin: 5%;
