@@ -5,13 +5,15 @@
 // const desc = document.querySelector(".desc");
 // const t1 = document.querySelector(".t1");
 // const t1a = document.querySelector(".t1a a");
-// const t1babout = document.querySelector(".t1 .t1b span");
+// const aboutme = document.querySelector("#aboutme");
+// const aboutmeh1 = document.querySelector("#aboutme h1");
+// const aboutbtn = document.querySelector("#aboutme p:nth-of-type(1) span");
 // const desccontent = document.querySelector(".desc-content");
 // const desctitle = document.querySelector(".desc-content .title");
 // const descbody = document.querySelector(".desc-content .dbody");
 // const desctags = document.querySelector(".desc-content .dtags");
 // const topbar = document.querySelector(".topbar");
-// const about = document.querySelector(".about");
+// const abouthidden = document.querySelector("#aboutme p:nth-of-type(2)");
 // const aboutmebtn = document.querySelector(".about-btn");
 // const cursor = document.querySelector(".cursor");
 // const indexbtn = document.querySelector(".index-button");
@@ -44,41 +46,44 @@
 // // ---- PARTY MODE ----
 
 // let partyon = false;
-// const msg1 = "Hey there, Welcome!";
+// const msg1 = "Welcome.";
 // const msg2 = "Let's get this party started! 🥳";
-// t1a.innerHTML = msg1;
+// aboutmeh1.innerHTML = msg1;
 // cancelAnimationFrame(rnd);
 
 // function toggleparty() {
 //     if (partyon) {
 //         cancelAnimationFrame(rnd);
-//         t1a.classList.remove("t1a-party-on");
-//         t1a.innerHTML = msg1;
+//         // aboutmeh1.classList.remove("party-on");
+//         aboutmeh1.innerHTML = msg1;
 //         scene3d.style.opacity = 0;
 //         // scene3d.style.display = "none";
 //         partyon = false;
 //     } else {
-//         t1a.classList.add("t1a-party-on");
-//         t1a.innerHTML = msg2;
-//         scene3d.style.opacity = 0.5;
+//         // aboutmeh1.classList.add("party-on");
+//         aboutmeh1.innerHTML = msg2;
+//         scene3d.style.opacity = 0.75;
 //         // scene3d.style.display = "block";
 //         animate();
 //         partyon = true;
 //     }
 // }
 
-// let partyobserver = new IntersectionObserver(partycallback, { rootMargin: "0px 0px 2000px 0px" });
-// partyobserver.observe(labelheader);
+// let partyobserver = new IntersectionObserver(partycallback); //, { rootMargin: "0px 0px 2000px 0px" });
+// partyobserver.observe(aboutme);
 // function partycallback(entries, observer) {
 //     entries.forEach(entry => {
 //         if (!entry.isIntersecting) {
-//             partyon = true;
-//             toggleparty();
+//             // partyon = true;
+//             if (partyon) {
+//                 toggleparty();
+//                 console.log("aa");
+//             }
 //         }
 //     });
 // }
 
-// //
+//
 
 // // ---- INDEX BUTTON ----
 
@@ -246,7 +251,7 @@
 
 // morebutton.forEach(i => { i.addEventListener('click', toggleinfo) });
 
-// let aboutison = false;
+let aboutison = false;
 
 // let topbar_observer = new IntersectionObserver(topbarcallback); //, { rootMargin: "-75% 0px 0px 0px" });
 // topbar_observer.observe(topbar);
@@ -262,20 +267,20 @@
 // }
 
 // function openabout() {
-//     gsap.to(about, { duration: 0.5, ease: "expo.out", height: "auto" });
-//     gsap.to(about, { duration: 0.25, ease: "linear", opacity: 1 });
+//     gsap.to(abouthidden, { duration: 0.5, ease: "expo.out", height: "auto" });
+//     gsap.to(abouthidden, { duration: 0.25, ease: "linear", opacity: 1 });
 //     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "50px" });
 //     // aboutmebtn.classList.add("about-btn-on");
-//     t1babout.style.display = "none";
+//     aboutbtn.style.display = "none";
 //     aboutison = true;
 // }
 
 // function closeabout() {
-//     gsap.to(about, { duration: 0.5, ease: "expo.out", height: "0" });
-//     gsap.to(about, { duration: 0.25, ease: "linear", opacity: 0 });
+//     gsap.to(abouthidden, { duration: 0.5, ease: "expo.out", height: "0" });
+//     gsap.to(abouthidden, { duration: 0.25, ease: "linear", opacity: 0 });
 //     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "200px" });
 //     // aboutmebtn.classList.remove("about-btn-on");
-//     t1babout.style.display = "inline";
+//     aboutbtn.style.display = "inline";
 //     aboutison = false;
 // }
 

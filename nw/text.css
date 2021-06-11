@@ -13,10 +13,10 @@ main {
   padding: 5% 0;
 }
 
-.txtblk .title {
+/* .txtblk .title {
   display: flex;
   align-items: center;
-}
+} */
 
 .txtblk h1 {
   font-family: "Poppins", sans-serif;
@@ -26,6 +26,12 @@ main {
 
 .txtblk p {
   color: white;
+}
+
+.txtblk p a {
+  color: grey;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .txtblk .tags {
@@ -50,3 +56,24 @@ main {
     font-size: 5vw;
   }
 }
+
+/* ABOUT ME SECTION */
+
+#aboutme h1 {
+  /* font-size: 50px; */
+}
+
+#aboutme p {
+  font-size: 18px;
+}
+
+#aboutme p:nth-of-type(2) {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* .party-on {
+  color: black !important;
+  background-color: white !important;
+} */
