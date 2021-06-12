@@ -24,6 +24,12 @@ main {
   font-size: 40px;
 }
 
+.txtblk h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+}
+
 .txtblk p {
   color: white;
 }
