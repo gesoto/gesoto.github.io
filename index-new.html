@@ -9,12 +9,7 @@
   <link rel="stylesheet" href="nw/textstyle.css">
 </head>
 
-
-
-
-
 <body>
-
 
   <!-- party on -->
   <div id="bubbles"></div>
@@ -23,25 +18,9 @@
   <script src="three/js/CanvasRenderer.js"></script>
   <script src="three/bubbles.js"></script>
 
-
-  <!-- nav buttons -->
-  <!-- <div class="nextbtn">Go to next project</div> -->
-  <!-- <div class="nextbtn">
-    <a class="link-btn" href="tow.html" target="_self">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="feather feather-arrow-down">
-        <line x1="12" y1="5" x2="12" y2="19"></line>
-        <polyline points="19 12 12 19 5 12"></polyline>
-      </svg>
-    </a>
-  </div> -->
-
-
   <main>
 
     <div class="topbar" id="top">
-      <!-- <img class="avatar" src="src/misc/avatar.jpg" alt=""> -->
       <div class="name" onclick=""><span>Salvador Soto</span></div>
       <a class="link-btn" href="https://github.com/gesoto" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -72,17 +51,11 @@
 
 
 
-
-
-
-
-
     <div class="txtblk" id="aboutme">
-
       <h1>Welcome.</h1>
       <p class="aboutme">I'm a hybrid designer focused on Interactivity, Rapid Prototyping, and Motion Design. I have <a
-          onclick="toggleparty()">fun</a> designing and coding my ideas. <a onclick="toggleabout()"><span>More about
-            me?</span></a></p>
+          id="funbtn" onclick="toggleparty()">fun</a> designing and coding my ideas. <a onclick="openabout()"><span>More
+            about me?</span></a></p>
 
       <p class="aboutme-hidden">
         Formed as an Industrial Designer, I have served as a Product Designer, Rapid Prototyper, and Design
@@ -114,22 +87,15 @@
         <br><br>
         I'm very passionate about designing and prototyping new concepts, innovative experiences, and meaningful
         solutions, driven by my immense curiosity to understand and explore multiple disciplines outside my work.
-        <br><br><a onclick="toggleabout()"><span>See Less</span></a>
+        <br><br>
       </p>
-
     </div>
 
 
 
 
 
-
-
-
-
-
     <div class="index-grid" id="">
-
       <div class="index-item item-embeddeduis" onclick="window.location.href = 'tow.html';">
         <div class="label">AI Thermostat Embedded Control</div>
         <div class="groups">
@@ -192,8 +158,11 @@
           </div>
         </div>
       </div>
-
     </div>
+
+
+
+
 
     <div class="nextbtn">
       <a class="link-btn" href="tow.html" target="_self">
@@ -207,9 +176,6 @@
     </div>
 
   </main>
-
-  <!-- <div class="bottomhit" style="height: 1px;"></div> -->
-  <!-- <footer></footer> -->
 
   <script src="./lottie-player.js"></script>
   <script src="./gsap.min.js"></script>

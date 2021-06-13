@@ -5,15 +5,13 @@
 // const desc = document.querySelector(".desc");
 // const t1 = document.querySelector(".t1");
 // const t1a = document.querySelector(".t1a a");
-const aboutme = document.querySelector("#aboutme");
-const aboutmeh1 = document.querySelector("#aboutme h1");
-const aboutbtn = document.querySelector("#aboutme p:nth-of-type(1) span");
+
 // const desccontent = document.querySelector(".desc-content");
 // const desctitle = document.querySelector(".desc-content .title");
 // const descbody = document.querySelector(".desc-content .dbody");
 // const desctags = document.querySelector(".desc-content .dtags");
-// const topbar = document.querySelector(".topbar");
-const abouthidden = document.querySelector("#aboutme p:nth-of-type(2)");
+
+
 // const aboutmebtn = document.querySelector(".about-btn");
 // const cursor = document.querySelector(".cursor");
 // const indexbtn = document.querySelector(".index-button");
@@ -24,18 +22,14 @@ const abouthidden = document.querySelector("#aboutme p:nth-of-type(2)");
 // const embeddeduis = document.querySelector("#embeddeduis");
 // const labelheader = document.querySelector(".labelheader");
 // const morebutton = document.querySelectorAll(".more-button");
-// const item1 = document.querySelector(".index-grid .index-item:nth-child(1)");
-// const item2 = document.querySelector(".index-grid .index-item:nth-child(2)");
-// const item3 = document.querySelector(".index-grid .index-item:nth-child(3)");
-// const item4 = document.querySelector(".index-grid .index-item:nth-child(4)");
-// const item5 = document.querySelector(".index-grid .index-item:nth-child(5)");
+
+
+//
+
+// ---- BACKGROUND COLORS ----
+
 const griditems = document.querySelectorAll(".index-grid .index-item");
-const body = document.body;
-
-// //
-
-// // ---- BACKGROUND COLORS ----
-
+const docbody = document.body;
 const bgcolors = [
     "rgb(139, 120, 132)",
     "rgb(120, 130, 139)",
@@ -44,19 +38,18 @@ const bgcolors = [
     "rgb(139, 139, 120)"
 ];
 
-// griditems[0].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[0] });
-// griditems[1].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[1] });
-// griditems[2].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[2] });
-// griditems[3].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[3] });
-// griditems[4].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[4] });
+// griditems[0].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[0] });
+// griditems[1].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[1] });
+// griditems[2].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[2] });
+// griditems[3].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[3] });
+// griditems[4].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[4] });
 
 // for (var i = 0; i < griditems.length - 1; i++) {
 //     griditems[i].addEventListener("mouseover", function () { console.log(bgcolors[i]) });
 //     console.log(i)
 // }
 
-
-// //
+//
 
 // // ---- INDEX COVER ----
 
@@ -77,22 +70,30 @@ const bgcolors = [
 // // ---- PARTY MODE ----
 
 let partyon = false;
+
+const aboutme = document.querySelector("#aboutme");
+const aboutme_h1 = document.querySelector("#aboutme h1");
+const fun_btn = document.querySelector("#funbtn");
+
 const msg1 = "Welcome.";
 const msg2 = "Let's get this party started! 🥳";
-aboutmeh1.innerHTML = msg1;
+
+aboutme_h1.innerHTML = msg1;
 cancelAnimationFrame(rnd);
 
 function toggleparty() {
     if (partyon) {
         cancelAnimationFrame(rnd);
-        // aboutmeh1.classList.remove("party-on");
-        aboutmeh1.innerHTML = msg1;
+        aboutme_h1.innerHTML = msg1;
+        // fun_btn.innerHTML = "fun";
+        fun_btn.classList.remove("party-on");
         scene3d.style.opacity = 0;
         // scene3d.style.display = "none";
         partyon = false;
     } else {
-        // aboutmeh1.classList.add("party-on");
-        aboutmeh1.innerHTML = msg2;
+        aboutme_h1.innerHTML = msg2;
+        // fun_btn.innerHTML = "un-fun";
+        fun_btn.classList.add("party-on");
         scene3d.style.opacity = 0.75;
         // scene3d.style.display = "block";
         animate();
@@ -285,46 +286,40 @@ function partycallback(entries, observer) {
 // morebutton.forEach(i => { i.addEventListener('click', toggleinfo) });
 
 let aboutison = false;
+const topbar = document.querySelector(".topbar");
 
-// let topbar_observer = new IntersectionObserver(topbarcallback); //, { rootMargin: "-75% 0px 0px 0px" });
-// topbar_observer.observe(topbar);
+let topbar_observer = new IntersectionObserver(topbarcallback); //, { rootMargin: "-75% 0px 0px 0px" });
+topbar_observer.observe(topbar);
 
-// function topbarcallback(entries, observer) {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             if (aboutison) { closeabout(); }
-//         } else {
-//             // aboutmebtn.classList.remove("about-btn-on");
-//         }
-//     });
-// }
+function topbarcallback(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            if (aboutison) { closeabout(); }
+        } else {
+            // aboutmebtn.classList.remove("about-btn-on");
+        }
+    });
+}
+
+const aboutme_hidden_p = document.querySelector("#aboutme p:nth-of-type(2)");
+const more_btn = document.querySelector("#aboutme p:nth-of-type(1) span");
 
 function openabout() {
-    gsap.to(abouthidden, { duration: 0.5, ease: "expo.out", height: "auto" });
-    gsap.to(abouthidden, { duration: 0.25, ease: "linear", opacity: 1 });
+    gsap.to(aboutme_hidden_p, { duration: 0.5, ease: "expo.out", height: "auto" });
+    gsap.to(aboutme_hidden_p, { duration: 0.25, ease: "linear", opacity: 1 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "50px" });
     // aboutmebtn.classList.add("about-btn-on");
-    aboutbtn.style.display = "none";
+    more_btn.style.display = "none";
     aboutison = true;
 }
 
 function closeabout() {
-    gsap.to(abouthidden, { duration: 0.5, ease: "expo.out", height: "0" });
-    gsap.to(abouthidden, { duration: 0.25, ease: "linear", opacity: 0 });
+    gsap.to(aboutme_hidden_p, { duration: 0.5, ease: "expo.out", height: "0" });
+    gsap.to(aboutme_hidden_p, { duration: 0.25, ease: "linear", opacity: 0 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "200px" });
     // aboutmebtn.classList.remove("about-btn-on");
-    aboutbtn.style.display = "inline";
+    more_btn.style.display = "inline";
     aboutison = false;
-}
-
-function toggleabout() {
-    if (aboutison) {
-        closeabout();
-        // document.querySelector(".about-btn span").innerHTML = "About Me";
-    } else {
-        openabout();
-        // document.querySelector(".about-btn span").innerHTML = "Close";
-    }
 }
 
 

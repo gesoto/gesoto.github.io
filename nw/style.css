@@ -69,8 +69,6 @@ main {
   /* background: red; */
 }
 
-
-
 .topbar .avatar {
   border-radius: 50%;
   width: 50px;
@@ -369,6 +367,10 @@ main {
   margin: 5% 0;
 }
 
+.block-group.nogap {
+  margin: 0 !important;
+}
+
 /* Small or big blocks  */
 
 .s-block,
@@ -421,18 +423,23 @@ main {
 
 /* Text content inside a block */
 
-.block-cont-txt {
-  width: 80%;
+.s-block.txt p {
+  /* width: 80%; */
   text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  opacity: 0.75;
+  /* color: red; */
 }
 
 /* Grid container inside a block */
 
 .s-block .grid,
 .b-block .grid {
-  /* background: red; */
+  background: red;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -474,9 +481,17 @@ main {
     flex-direction: column;
   }
 
+  .block-group.rev {
+    flex-direction: column-reverse;
+  }
+
   .s-block {
     width: 100%;
     height: 100vw;
+  }
+
+  .s-block.txt {
+    height: auto;
   }
 }
 
@@ -676,12 +691,12 @@ main {
 .backbtn a {
   /* border: 2px solid white; */
   /* opacity: 0.5; */
-  margin: 40px;
+  margin: 25px;
 }
 
-.backbtn a:hover {
-  /* opacity: 1; */
-}
+/* .backbtn a:hover {
+  opacity: 1;
+} */
 
 @media only screen and (max-width: 1200px) {
   .backbtn {
@@ -693,25 +708,13 @@ main {
 
 .nextbtn {
   margin: 100px 0;
-  /* position: fixed; */
-  /* background: rgb(48, 48, 48); */
-  /* bottom: 80px; */
-  /* width: 100%; */
-  /* width: calc((100% - 1000px) / 2); */
-  /* height: 100%; */
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  /* z-index: 1; */
 }
 
 .nextbtn a {
   border: 2px solid white;
-}
-
-.nextbtn p {
-  font-size: 12px;
 }
