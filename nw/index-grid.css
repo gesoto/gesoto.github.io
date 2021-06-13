@@ -1,0 +1,210 @@
+/* INDEX GRID */
+
+/* grid general */
+
+.index-grid {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.index-grid .index-item {
+  width: 50%;
+  height: 500px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.index-grid .index-item:nth-child(5) {
+  width: 100%;
+}
+
+/* grid sub-items */
+
+.index-grid .index-item .groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.index-grid .index-item .group {
+  /* border: 1px solid green; for dev */
+  position: relative;
+  font-size: 0;
+}
+
+.index-grid .index-item .group .bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.index-grid .index-item .group .fg {
+  height: 100%;
+}
+
+.index-grid .index-item .label {
+  background: transparent;
+  text-align: center;
+  position: absolute;
+  margin: 0 5%;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* grid sub-items animation */
+
+.index-grid .index-item .groups,
+.index-grid .index-item .group,
+.index-grid .index-item .label {
+  transition: all 0.2s ease-out;
+}
+
+@media (hover: hover) {
+  .index-grid .index-item:hover .label {
+    /* transform: translateY(-100%); */
+    opacity: 1;
+  }
+  .index-grid .index-item:hover .groups {
+    /* transform: scale(0.9) translateY(-12%); */
+    transform: scale(0.8);
+    opacity: 0.25;
+  }
+  .index-grid .index-item:hover .groups .group {
+    transform: translateX(0);
+  }
+}
+
+/* grid breakpoints */
+
+@media only screen and (max-width: 1000px) {
+  .index-grid .index-item {
+    height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .index-grid .index-item {
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+/* grid sub-items specific */
+
+/* item embeddeduis */
+
+.index-grid .item-embeddeduis .group {
+  height: 55%;
+}
+.index-grid .item-embeddeduis .group .bg {
+  width: 22%;
+  left: 22%;
+  top: 26%;
+}
+
+/* item uidesignsystems */
+
+.index-grid .item-uidesignsystems .group:nth-child(1) {
+  height: 60%;
+  transform: translateX(10%);
+}
+.index-grid .item-uidesignsystems .group:nth-child(2) {
+  height: 55%;
+  transform: translateX(-40%);
+}
+.index-grid .item-uidesignsystems .group:nth-child(1) .bg {
+  width: 78%;
+  left: 11.1%;
+  top: 13.8%;
+}
+.index-grid .item-uidesignsystems .group:nth-child(2) .bg {
+  width: 64%;
+  left: 18%;
+  top: 7%;
+}
+
+/* item smartdisplays */
+
+.index-grid .item-smartdisplays .group {
+  height: 70%;
+}
+.index-grid .item-smartdisplays .group .bg {
+  width: 72%;
+  left: 14%;
+  top: 20.1%;
+}
+
+/* item voiceuis */
+
+.index-grid .item-voiceuis .group {
+  height: 70%;
+}
+.index-grid .item-voiceuis .group .fg {
+  visibility: hidden;
+  /* mix-blend-mode: screen; */
+}
+.index-grid .item-voiceuis .group .bg {
+  width: 70%;
+  left: 28%;
+}
+
+/* item games */
+
+.index-grid .item-games .group:nth-child(1) {
+  height: 59%;
+  transform: translateX(30%);
+}
+.index-grid .item-games .group:nth-child(2) {
+  height: 50%;
+  transform: translateX(-50%);
+}
+.index-grid .item-games .group:nth-child(3) {
+  height: 54%;
+  transform: translateX(-70%);
+}
+.index-grid .item-games .group:nth-child(1) .bg {
+  width: 78%;
+  left: 11.1%;
+  top: 13.8%;
+}
+.index-grid .item-games .group:nth-child(2) .bg {
+  width: 82%;
+  left: 9%;
+  top: 13%;
+}
+.index-grid .item-games .group:nth-child(3) .bg {
+  width: 64%;
+  left: 18%;
+  top: 7%;
+}
+
+/* items bg color */
+
+.index-grid .index-item:nth-child(1),
+.index-grid .index-item:nth-child(5) {
+  background: rgba(255, 255, 255, 0.1);
+}
+.index-grid .index-item:nth-child(2),
+.index-grid .index-item:nth-child(6) {
+  background: rgba(255, 255, 255, 0.14);
+}
+.index-grid .index-item:nth-child(3) {
+  background: rgba(255, 255, 255, 0.18);
+}
+.index-grid .index-item:nth-child(4) {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* footer */
+
+/* footer {
+  height: 2px;
+  background: red;
+} */

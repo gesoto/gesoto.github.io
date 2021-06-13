@@ -25,6 +25,13 @@
 // const labelheader = document.querySelector(".labelheader");
 // const morebutton = document.querySelectorAll(".more-button");
 
+// const body = document.querySelector(".main");
+// window.addEventListener('load', function () {
+//     gsap.fromTo(body, { opacity: 0 }, { duration: 0.5, ease: "linear", opacity: 1, delay: 0.1 });
+//     gsap.fromTo(body, { y: 100 }, { y: 0, delay: 0.1 });
+// }, false);
+
+
 // //
 
 // // ---- INDEX COVER ----

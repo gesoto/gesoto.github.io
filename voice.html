@@ -13,11 +13,23 @@
 
 <body>
 
+  <!-- nav buttons -->
+  <div class="nextbtn">
+    <a class="link-btn" href="index-new.html" target="_self">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-arrow-left">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </a>
+  </div>
+
   <main>
 
     <div class="txtblk" id="voiceuis">
       <div class="title">
-        <h1>Voice User Interfaces</h1>
+        <h1>Speech & Voice User Interfaces</h1>
       </div>
       <div class="tags">
         <div>Voice Interface</div>
@@ -42,7 +54,7 @@
       <!-- <h2>Concept</h2> -->
       <p>As Hisense began exploring voice-driven interfaces I provided key
         components for unique interaction experiences,
-       I started focusing on the following main areas:</p>
+        I started focusing on the following main areas:</p>
       <ul>
         <li>A natural and responsive back forth conversation loop</li>
         <li>Visual voice feedback for when user is talking</li>
@@ -67,21 +79,25 @@
       </div>
       <!-- </div> -->
       <!-- <div class="block-group"> -->
-      <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/voice-chat-2g.mp4"
-          type="video/mp4" playsinline autoplay loop muted></video></div>
+      <div class="s-block" style="background: rgb(51, 51, 51);"><video class="block-cont-w-inset" vph
+          data-src="src/speech/voice-chat-2g.mp4" type="video/mp4" playsinline autoplay loop muted></video></div>
       <div class="s-block blackblock"><video class="block-cont-w-inset" vph data-src="src/speech/voice-chat-3.mp4"
           type="video/mp4" playsinline autoplay loop muted></video></div>
     </div>
 
     <div class="txtblk" id="">
       <h2>Audio Feedback</h2>
-      <p>I worked on designing a voice visualizer as it was an integral part to have immediate and clear visual feedback
+      <!-- <p>I worked on designing a voice visualizer as it was an integral part to have immediate and clear visual feedback
         when the microphone was listening and the user was speaking.</p>
       <p>Initially I built the concept animation in traditional animation tools (After Effects) which showcased the
         desired design and doubled down as a fallback asset after being exported for HTML and Android platforms using
         Lottie.</p>
       <p>I prototyped this dynamic animation which worked with a real microphone input. The prototype code was
-        handed-off to the developer which helped bring the final product much closer to the concept design.</p>
+        handed-off to the developer which helped bring the final product much closer to the concept design.</p> -->
+      <p>Providing immediate and clear visual feedback when the user speaks is an integral part of the system.</p>
+      <p>I worked on an initial animation in After Effects and exported dynamically to JSON using Lottie. It was used as
+        a design reference and fallback asset. Later I prototyped a dynamic animation that worked using the computer
+        microphone input. The developer used the prototype code to further bring the design into implementation.</p>
     </div>
 
     <div class="block-group">
@@ -100,7 +116,7 @@
 
     <div class="txtblk" id="">
       <h2>Avatar Animation</h2>
-      <p>Target demographic in China showed an increased interest in animated graphics and "cute" characters, it was
+      <!-- <p>Target demographic in China showed an increased interest in animated graphics and "cute" characters, it was
         then when Hisense decided to create a mascot, "Jubao". This character was meant as a friendly interface element
         for the UI, I took Jubao's character and animated many different reactions and emotions.</p>
       <p>As I researched how to efficiently output animation assets I came accross Lottie, which allowed me to export
@@ -109,11 +125,15 @@
         each interaction patterns.</p>
       <p>I later used these same animation files to build an animation library that development could reuse when
         building the interface. This flexibility was a huge time saver when updating the animations and managing the
-        hand-off process.</p>
+        hand-off process.</p> -->
+      <p>Target demographic showed increased interest in animated "cute" characters, Hisense wanted to introduce it's
+        mascot as a friendly interface element.</p>
+      <p>I animated the mascot character through multiple emotions and reactions, exported dynamic files with Lottie,
+        and build an animation library for development together with a preview and test tool for the design team.</p>
     </div>
 
     <div class="block-group">
-      <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/reco.mp4" type="video/mp4"
+      <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/reco2.mp4" type="video/mp4"
           playsinline autoplay loop muted></video></div>
       <div class="s-block">
         <lottie-player src="src/wave.json" background="transparent" speed="1" loop autoplay></lottie-player>
@@ -122,17 +142,17 @@
 
     <div class="block-group">
       <div class="s-block">
-        <p class="block-cont-txt">The layerd settings navigation model interaction and animations working on target
-          platform.</p>
+        <p class="block-cont-txt">Design team could preview different animations in order to visualize
+          reaction sequences and user interaction stories.</p>
       </div>
-      <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/reco2.mp4" type="video/mp4"
+      <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/reco.mp4" type="video/mp4"
           playsinline autoplay loop muted></video></div>
     </div>
 
     <div class="txtblk" id="">
       <h2>Prototyping</h2>
-      <p>I worked on several prototypes that merged the key components and showcased an entire user experience and all
-        response types.</p>
+      <p>I worked on several prototypes merging the previously mentioned key components and showcasing the user
+        experience through the different steps of user interactions and system responses.</p>
     </div>
 
     <div class="block-group">
@@ -144,10 +164,14 @@
 
     <div class="txtblk" id="">
       <h2>High-Fidelity Prototype</h2>
-      <p>This prototype aimed to achieve a final product experience during the early stages of the design
+      <!-- <p>This prototype aimed to achieve a final product experience during the early stages of the design
         process, it helped establish the vision and user test the experience before development implementation.</p>
       <p>I hooked the simulation through Web Speech API and created a list of commands and responses so that anyone
-        testing the prototype were able to tailor the responses of the UI to their desire.</p>
+        testing the prototype were able to tailor the responses of the UI to their desire.</p> -->
+      <p>The prototype showcased an end-product experience during early development, helped establish the vision, and
+        user test the design before implementation.</p>
+      <p>Hooking the prototype to Web Speech API allowed the team to use real voice commands, and tailor design tests by
+        modifying the inputs and outputs through an external file.</p>
     </div>
 
     <div class="block-group">
@@ -156,8 +180,8 @@
       <div class="s-block"><img class="block-cont-h-inset" iph data-src="src/speech/codeside2.jpg" alt=""></div>
       <div class="s-block"><img class="block-cont-w-full" iph data-src="src/exp/voice-proto.jpg" alt=""></div>
       <div class="s-block">
-        <p class="block-cont-txt">The layerd settings navigation model interaction and animations working on target
-          platform.</p>
+        <p class="block-cont-txt">I hacked together a remote + microphone hardware interaction so the testing experience
+          felt as close to real as possible.</p>
       </div>
     </div>
 

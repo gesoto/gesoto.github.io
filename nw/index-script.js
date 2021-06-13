@@ -24,6 +24,37 @@ const abouthidden = document.querySelector("#aboutme p:nth-of-type(2)");
 // const embeddeduis = document.querySelector("#embeddeduis");
 // const labelheader = document.querySelector(".labelheader");
 // const morebutton = document.querySelectorAll(".more-button");
+// const item1 = document.querySelector(".index-grid .index-item:nth-child(1)");
+// const item2 = document.querySelector(".index-grid .index-item:nth-child(2)");
+// const item3 = document.querySelector(".index-grid .index-item:nth-child(3)");
+// const item4 = document.querySelector(".index-grid .index-item:nth-child(4)");
+// const item5 = document.querySelector(".index-grid .index-item:nth-child(5)");
+const griditems = document.querySelectorAll(".index-grid .index-item");
+const body = document.body;
+
+// //
+
+// // ---- BACKGROUND COLORS ----
+
+const bgcolors = [
+    "rgb(139, 120, 132)",
+    "rgb(120, 130, 139)",
+    "rgb(127, 139, 120)",
+    "rgb(139, 120, 120)",
+    "rgb(139, 139, 120)"
+];
+
+// griditems[0].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[0] });
+// griditems[1].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[1] });
+// griditems[2].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[2] });
+// griditems[3].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[3] });
+// griditems[4].addEventListener("mouseover", function () { body.style.backgroundColor = bgcolors[4] });
+
+// for (var i = 0; i < griditems.length - 1; i++) {
+//     griditems[i].addEventListener("mouseover", function () { console.log(bgcolors[i]) });
+//     console.log(i)
+// }
+
 
 // //
 

@@ -3,7 +3,7 @@
 
 /* TEXT BLOCK */
 
-main {
+body {
   color: white;
   font-family: "Open Sans", sans-serif;
 }
@@ -56,10 +56,10 @@ main {
 
 @media only screen and (max-width: 500px) {
   .txtblk .tags {
-    display: none;
+    /* display: none; */
   }
   .txtblk h1 {
-    font-size: 5vw;
+    /* font-size: 5vw; */
   }
 }
 
@@ -82,4 +82,14 @@ main {
 /* .party-on {
   color: black !important;
   background-color: white !important;
+} */
+
+/* FOOTER */
+
+/* footer {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+  opacity: 0.25;
+  padding: 20px;
 } */

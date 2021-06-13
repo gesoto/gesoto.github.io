@@ -7,7 +7,7 @@
   <title>__ssoto__</title>
   <link rel="stylesheet" href="nw/child.css">
   <link rel="stylesheet" href="nw/text.css">
-  <link rel="stylesheet" href="nw/topgrid.css">
+  <link rel="stylesheet" href="nw/index-grid.css">
   <link rel="stylesheet" href="nw/topbar.css">
 </head>
 
@@ -18,16 +18,29 @@
 <body>
 
 
-    <!-- party on -->
-    <div id="bubbles"></div>
-    <script src="three/js/three.js"></script>
-    <script src="three/js/Projector.js"></script>
-    <script src="three/js/CanvasRenderer.js"></script>
-    <script src="three/bubbles.js"></script>
+  <!-- party on -->
+  <div id="bubbles"></div>
+  <script src="three/js/three.js"></script>
+  <script src="three/js/Projector.js"></script>
+  <script src="three/js/CanvasRenderer.js"></script>
+  <script src="three/bubbles.js"></script>
+
+
+  <!-- nav buttons -->
+  <!-- <div class="nextbtn">Go to next project</div> -->
+  <!-- <div class="nextbtn">
+    <a class="link-btn" href="tow.html" target="_self">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-arrow-down">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </a>
+  </div> -->
 
 
   <main>
-
 
     <div class="topbar" id="top">
       <!-- <img class="avatar" src="src/misc/avatar.jpg" alt=""> -->
@@ -68,12 +81,10 @@
 
     <div class="txtblk" id="aboutme">
 
-
       <h1>Welcome.</h1>
-      <p class="aboutme">I'm a hybrid designer focused on Interaction, Rapid Prototyping, and Motion Design. I have <a
+      <p class="aboutme">I'm a hybrid designer focused on Interactivity, Rapid Prototyping, and Motion Design. I have <a
           onclick="toggleparty()">fun</a> designing and coding my ideas. <a onclick="toggleabout()"><span>More about
             me?</span></a></p>
-
 
       <p class="aboutme-hidden">
         Formed as an Industrial Designer, I have served as a Product Designer, Rapid Prototyper, and Design
@@ -85,13 +96,13 @@
         <a href="https://www.engadget.com/2011-06-23-prototype-dual-screened-2-in-1-android-smartpad-from-imerj-previ.html"
           target="_blank">Dual-Screen Smartphone</a>
         at Flextronics — Conceptualizing and prototyping Touch, D-Pad, and
-        <a onclick="gotoindex('voiceuis')">Voice User Interfaces</a>
+        <a href="voice.html">Voice User Interfaces</a>
         , which developed into multiple
-        <a onclick="gotoindex('smartdisplays')">Smart Displays</a>
+        <a href="tv.html">Smart Displays</a>
         , and TV products for Hisense, Toshiba, and Sharp — The creation of
-        <a onclick="gotoindex('uidesignsystems')">UI Design Systems</a>
+        <a href="kos.html">UI Design Systems</a>
         and enterprise applications for Katerra's Advanced Buildings and
-        <a onclick="gotoindex('embeddeduis')">IoT products</a>
+        <a href="tow.html">IoT products</a>
         ecosystem.
         <br><br>
         Over my 10 past years of experience I've gained insightful experience by working together with highly
@@ -122,16 +133,17 @@
     <div class="index-grid" id="">
 
       <div class="index-item item-embeddeduis" onclick="window.location.href = 'tow.html';">
+        <div class="label">AI Thermostat Embedded Control</div>
         <div class="groups">
           <div class="group">
             <video class="bg" src="src/kat/faceplate/vid.mp4" type="video/mp4" playsinline autoplay loop muted></video>
             <img class="fg" src="src/misc/towdual.png" alt="">
           </div>
         </div>
-        <div class="label">Embeded User Interfaces for IoT devices</div>
       </div>
 
       <div class="index-item item-uidesignsystems" onclick="window.location.href = 'kos.html';">
+        <div class="label">UI Design System for Cloud Platform</div>
         <div class="groups">
           <div class="group">
             <img class="bg" src="src/kat/07.jpg" alt="">
@@ -142,20 +154,20 @@
             <img class="fg" src="src/misc/iphone.png" alt="">
           </div>
         </div>
-        <div class="label">UI Design Systems for Desktop & Mobile Building Management Tools</div>
       </div>
 
       <div class="index-item item-smartdisplays" onclick="window.location.href = 'tv.html';">
+        <div class="label">Smart Display User Interfaces & Operating Systems</div>
         <div class="groups">
           <div class="group">
             <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
             <img class="fg" src="src/misc/tv.png" alt="">
           </div>
         </div>
-        <div class="label">HTML & Android based Smart Display Interfaces and Operating Systems</div>
       </div>
 
       <div class="index-item item-voiceuis" onclick="window.location.href = 'voice.html';">
+        <div class="label">Speech & Voice Interfaces for Smart Displays</div>
         <div class="groups">
           <div class="group">
             <lottie-player class="bg" src="src/audio.json" background="transparent" speed=".4" loop autoplay>
@@ -163,21 +175,15 @@
             <img class="fg" src="src/misc/tv.png" alt="">
           </div>
         </div>
-        <div class="label">Speech & Voice Audio Interfaces for Displays</div>
       </div>
 
-      <div class="index-item item-animation" onclick="window.location.href = 'exp.html';">
+      <div class="index-item item-games" onclick="window.location.href = 'exp.html';">
+        <div class="label">Animations, Interactivity, Games</div>
         <div class="groups">
           <div class="group">
             <video class="bg" src="src/disp/a1b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
             <img class="fg" src="src/misc/ipad.png" alt="">
           </div>
-        </div>
-        <div class="label">Animations, 3D, and Interactivity</div>
-      </div>
-
-      <div class="index-item item-games" onclick="window.location.href = 'exp.html';">
-        <div class="groups">
           <div class="group">
             <video class="bg" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
             <img class="fg" src="src/misc/iphone-8.png" alt="">
@@ -187,12 +193,13 @@
             <img class="fg" src="src/misc/iphone.png" alt="">
           </div>
         </div>
-        <div class="label">Game Design & AR</div>
       </div>
 
     </div>
 
   </main>
+
+  <!-- <footer></footer> -->
 
   <script src="./lottie-player.js"></script>
   <script src="./gsap.min.js"></script>
