@@ -30,12 +30,12 @@
 
 const griditems = document.querySelectorAll(".index-grid .index-item");
 const docbody = document.body;
+let cc = 0;
 const bgcolors = [
-    "rgb(139, 120, 132)",
-    "rgb(120, 130, 139)",
-    "rgb(127, 139, 120)",
-    "rgb(139, 120, 120)",
-    "rgb(139, 139, 120)"
+    "#CBABAB",
+    "#8FBCBB",
+    "#C9C5AA",
+    "#000"
 ];
 
 // griditems[0].addEventListener("mouseover", function () { docbody.style.backgroundColor = bgcolors[0] });
@@ -48,6 +48,17 @@ const bgcolors = [
 //     griditems[i].addEventListener("mouseover", function () { console.log(bgcolors[i]) });
 //     console.log(i)
 // }
+
+function togglebgcolor() {
+    docbody.style.backgroundColor = bgcolors[cc];
+    if (cc < bgcolors.length - 1) {
+        cc++;
+    } else {
+        cc = 0;
+    }
+
+
+}
 
 //
 
@@ -294,7 +305,7 @@ topbar_observer.observe(topbar);
 function topbarcallback(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            if (aboutison) { closeabout(); }
+            if (aboutison) { closeabout() }
         } else {
             // aboutmebtn.classList.remove("about-btn-on");
         }
@@ -305,21 +316,21 @@ const aboutme_hidden_p = document.querySelector("#aboutme p:nth-of-type(2)");
 const more_btn = document.querySelector("#aboutme p:nth-of-type(1) span");
 
 function openabout() {
+    aboutison = true;
     gsap.to(aboutme_hidden_p, { duration: 0.5, ease: "expo.out", height: "auto" });
     gsap.to(aboutme_hidden_p, { duration: 0.25, ease: "linear", opacity: 1 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "50px" });
     // aboutmebtn.classList.add("about-btn-on");
     more_btn.style.display = "none";
-    aboutison = true;
 }
 
 function closeabout() {
+    aboutison = false;
     gsap.to(aboutme_hidden_p, { duration: 0.5, ease: "expo.out", height: "0" });
     gsap.to(aboutme_hidden_p, { duration: 0.25, ease: "linear", opacity: 0 });
     // gsap.to(t1, { duration: 0.5, ease: "expo.out", marginTop: "200px" });
     // aboutmebtn.classList.remove("about-btn-on");
     more_btn.style.display = "inline";
-    aboutison = false;
 }
 
 

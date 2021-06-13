@@ -86,10 +86,21 @@ body {
 
 /* FOOTER */
 
-/* footer {
+footer {
   text-align: center;
-  text-decoration: underline;
-  font-size: 12px;
-  opacity: 0.25;
-  padding: 20px;
-} */
+  /* text-decoration: underline; */
+  font-size: 13px;
+  padding: 0 0 40px 0;
+  
+}
+
+footer a {
+  color: white;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+}
+
+footer a:hover {
+  /* color: white; */
+  opacity: 1;
+}

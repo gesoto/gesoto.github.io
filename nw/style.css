@@ -81,6 +81,11 @@ main {
   margin-right: auto;
 }
 
+.name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* 
 
 
@@ -578,7 +583,6 @@ main {
   width: 100%;
   /* background: red; */
   position: relative;
-  
 }
 .itm.tow .bg {
   width: 100%;
@@ -732,4 +736,45 @@ main {
 
 .nextbtn a {
   border: 2px solid white;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/* LINK BUTTONS INSIDE BLOCKS */
+
+.b-block {
+  /* display: absolute; */
+}
+.b-block .video {
+  /* display: relative; */
+  /* left: 0; */
+}
+.b-block .link-btn {
+  position: absolute;
+  /* left: calc(50% - 25px); */
+  margin: 60% 0 0 0;
+  /* bottom: 0; */
+  /* transform: translateY(200px); */
+  border: 2px solid white;
+
 }

@@ -31,11 +31,12 @@
           <h1>Speech & Voice User Interfaces</h1>
         </div>
         <div class="tags">
-          <div>Voice Interface</div>
+          <div>Voice UI</div>
           <div>Animation</div>
           <div>UX Prototyping</div>
-          <div>High Fidelity Prototyping</div>
-          <div>HTML</div>
+          <div>Web</div>
+          <div>Android</div>
+          <div>Lottie</div>
         </div>
         <p>Created for a series of smart display products to make use of Hisense newest voice recognition technology.
           My contributions include the design and prototype of visual audio interactions, motion, character animations,
@@ -105,17 +106,19 @@
         <h2>Audio Feedback</h2>
         <p>Providing immediate and clear visual feedback when the user speaks is an integral part of the system.</p>
         <p>I worked on an initial animation in After Effects and exported dynamically to JSON using Lottie. It was used
-          as
-          a design reference and fallback asset. Later I prototyped a dynamic animation that worked using the computer
-          microphone input. The developer used the prototype code to further bring the design into implementation.</p>
+          as a design reference and fallback asset. Later I prototyped a <a
+            href="https://github.com/gesoto/microphone-audio-visualizer" target="_blank">dynamic animation</a> that
+          worked using the
+          computer microphone input. The developer used the prototype code to further bring the design into
+          implementation.</p>
       </div>
 
       <div class="block-group">
         <div class="b-block blackblock"><video class="block-cont-w-full" vph data-src="src/speech/w1.mp4"
             type="video/mp4" playsinline autoplay loop muted></video></div>
-      </div>
+        <!-- </div> -->
 
-      <div class="block-group">
+        <!-- <div class="block-group"> -->
         <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/voice-viz-work.mp4"
             type="video/mp4" playsinline autoplay loop muted></video></div>
         <div class="s-block">
@@ -135,7 +138,9 @@
         <p>Target demographic showed increased interest in animated "cute" characters, Hisense wanted to introduce it's
           mascot as a friendly interface element.</p>
         <p>I animated the mascot character through multiple emotions and reactions, exported dynamic files with Lottie,
-          and build an animation library for development together with a preview and test tool for the design team.</p>
+          and build an animation library for development together with a <a
+            href="https://github.com/gesoto/animation-tester-reactjs" target="_blank">tester tool</a> for the team to
+          preview different animations in order to visualize reaction sequences and user interaction stories.</p>
       </div>
 
       <div class="block-group">
@@ -144,9 +149,11 @@
         <div class="s-block">
           <lottie-player src="src/wave.json" background="transparent" speed="1" loop autoplay></lottie-player>
         </div>
-        <div class="s-block txt">
+        <!-- <div class="s-block txt">
           <p>Design team could preview different animations in order to visualize
             reaction sequences and user interaction stories.</p>
+        </div> -->
+        <div class="s-block"><img class="block-cont-h-full" iph data-src="src/speech/jubao-whiteboard.jpg" alt="">
         </div>
         <div class="s-block"><video class="block-cont-w-inset" vph data-src="src/speech/reco.mp4" type="video/mp4"
             playsinline autoplay loop muted></video></div>
@@ -179,7 +186,8 @@
     <section>
       <div class="txtblk" id="">
         <h2>High-Fidelity Prototype</h2>
-        <p>The prototype showcased an end-product experience during early development, helped establish the vision, and
+        <p>The <a href="https://github.com/gesoto/voice-synthesis-and-speech-recognition" target="_blank">prototype</a>
+          showcased an end-product experience during early development, helped establish the vision, and
           user test the design before implementation.</p>
         <p>Hooking the prototype to Web Speech API allowed the team to use real voice commands, and tailor design tests
           by modifying the inputs and outputs through an external file.</p>
