@@ -4,19 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta property="og:title" content="Salvador Soto">
-  <meta property="og:description" content="Multi-disciplinary designer. Passionate about Rapid Prototyping and Motion Design. I have fun designing and coding my ideas.">
-  <meta property="og:image" content="src/misc/cover.jpg">
-  <meta property="og:url" content="gesoto.com">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta property="og:site_name" content="Salvador Soto Portfolio">
-  <meta name="twitter:image:alt" content="Salvador Soto Portfolio Cover Image">
-
-  <title>Gesoto | Work</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="src/misc/favicon.ico" type="image/x-icon">
+  <title>__ssoto__</title>
+  <link rel="stylesheet" href="nw/style.css">
+  <link rel="stylesheet" href="nw/textstyle.css">
 </head>
 
 <body>
@@ -28,1117 +18,171 @@
   <script src="three/js/CanvasRenderer.js"></script>
   <script src="three/bubbles.js"></script>
 
-  <div class="main">
+  <main>
 
-    <!-- <div class="project-btn">
-      <div class="project-btn-container" onclick="toggleinfo()">
-        <div class="project-btn-label">Project Name</div>
-        <img src="src/misc/plus.svg">
-      </div>
-    </div> -->
-    <!-- <div class="close-btn">
-      <div class="close-btn-container" onclick="toggleinfo()">
-        <img src="src/misc/x.svg">
-      </div>
-    </div> -->
+    <div class="topbar" id="top">
+      <div class="name" onclick="togglebgcolor()">Salvador Soto</div>
+      <a class="link-btn" href="https://github.com/gesoto" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+      </a>
+      <a class="link-btn" href="https://www.linkedin.com/in/salvador-soto-a47b8b34" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a class="link-btn" href="mailto:soto.salvador@gmail.com" target="_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
 
-    <div class="totop-btn">
-      <div class="totop-btn-container" onclick="backtotop()">
-        <img src="src/misc/arrow-up.svg">
+
+
+
+
+    <div class="txtblk" id="aboutme">
+      <h1>Welcome.</h1>
+      <p class="aboutme">I'm a hybrid designer focused on Interactivity, Rapid Prototyping, and Motion Design. I have <a
+          id="funbtn" onclick="toggleparty()">fun</a> designing and coding my ideas. <a onclick="openabout()"><span>More
+            about me?</span></a></p>
+
+      <p class="aboutme-hidden">
+        Formed as an Industrial Designer, I have served as a Product Designer, Rapid Prototyper, and Design
+        Technologist accross multiple startup-like teams within Innovation and Research & Development at Flextronics,
+        Hisense, and Katerra.
+        <br><br>
+        My past experiences involve working in cross-functional teams designing entire end-to-end experiences such
+        as the creation of a hybrid
+        <a href="https://www.engadget.com/2011-06-23-prototype-dual-screened-2-in-1-android-smartpad-from-imerj-previ.html"
+          target="_blank">Dual-Screen Smartphone</a>
+        at Flextronics — Conceptualizing and prototyping Touch, D-Pad, and
+        <a href="voice.html">Voice User Interfaces</a>
+        , which developed into multiple
+        <a href="tv.html">Smart Displays</a>
+        , and TV products for Hisense, Toshiba, and Sharp — The creation of
+        <a href="kos.html">UI Design Systems</a>
+        and enterprise applications for Katerra's Advanced Buildings and
+        <a href="tow.html">IoT products</a>
+        ecosystem.
+        <br><br>
+        Over my 10 past years of experience I've gained insightful experience by working together with highly
+        collaborative & cross-functional teams across different time-zones, languages, and regions.
+        <br><br>
+        My contributions have listed me as a registered inventor in multiple technology &
+        <a href="https://patents.justia.com/inventor/salvador-soto" target="_blank">innovation patents</a>
+        , and rewarded me with final positions in international design contests such the
+        <a href="https://theindexproject.org/award/winnersandfinalists/waste-recovering-system" target="_blank">Index
+          Project Award.</a>
+        <br><br>
+        I'm very passionate about designing and prototyping new concepts, innovative experiences, and meaningful
+        solutions, driven by my immense curiosity to understand and explore multiple disciplines outside my work.
+        <br><br>
+      </p>
+    </div>
+
+
+
+
+
+    <div class="index-grid" id="">
+      <div class="index-item item-embeddeduis" onclick="window.location.href = 'tow.html';">
+        <div class="label">AI Thermostat Embedded Control</div>
+        <div class="groups">
+          <div class="group">
+            <video class="bg" src="src/kat/faceplate/vid.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/towdual.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="index-item item-uidesignsystems" onclick="window.location.href = 'kos.html';">
+        <div class="label">UI Design System for Cloud Platform</div>
+        <div class="groups">
+          <div class="group">
+            <img class="bg" src="src/kat/07.jpg" alt="">
+            <img class="fg" src="src/misc/ipad.png" alt="">
+          </div>
+          <div class="group">
+            <video class="bg" src="src/kat/11b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/iphone.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="index-item item-voiceuis" onclick="window.location.href = 'voice.html';">
+        <div class="label">Speech & Voice Interfaces for Smart Displays</div>
+        <div class="groups">
+          <div class="group">
+            <lottie-player class="bg" src="src/audio.json" background="transparent" speed=".4" loop autoplay>
+            </lottie-player>
+            <img class="fg" src="src/misc/tv.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="index-item item-smartdisplays" onclick="window.location.href = 'tv.html';">
+        <div class="label">Smart Display User Interfaces & Operating Systems</div>
+        <div class="groups">
+          <div class="group">
+            <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/tv.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="index-item item-games" onclick="window.location.href = 'exp.html';">
+        <div class="label">Animations, Interactivity, Games</div>
+        <div class="groups">
+          <div class="group">
+            <video class="bg" src="src/disp/a1b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/ipad.png" alt="">
+          </div>
+          <div class="group">
+            <video class="bg" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/iphone-8.png" alt="">
+          </div>
+          <div class="group">
+            <video class="bg" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted></video>
+            <img class="fg" src="src/misc/iphone.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="desc" onclick="toggleinfo()">
-      <div class="desc-content">
-        <div class="title"></div>
-        <div class="dbody"></div>
-        <div class="dtags"></div>
-      </div>
+
+
+
+
+    <div class="nextbtn">
+      <a class="link-btn" href="tow.html" target="_self">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-arrow-down">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
     </div>
 
-    <div class="fixed-buttons">
-      <div class="index-button" onclick="">
-        <div class="item-container">
-          <div class="item">
-            <div>Embedded User Interfaces</div>
-          </div>
-          <div class="item">
-            <div>UI Design Systems & Tools</div>
-          </div>
-          <div class="item">
-            <div>Smart Displays UIs</div>
-          </div>
-          <div class="item">
-            <div>Voice User Interfaces</div>
-          </div>
-          <div class="item">
-            <div>Animation</div>
-          </div>
-          <div class="item">
-            <div>Games</div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </main>
 
-    <div class="child">
-
-      <div class="core">
-
-        <div class="topbar" id="top">
-          <img class="avatar" src="src/misc/avatar.jpg" alt="">
-          <div class="about-btn" onclick=""><span>Salvador Soto</span></div>
-          <a class="link-btn" href="https://github.com/gesoto" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-              </path>
-            </svg>
-          </a>
-          <a class="link-btn" href="https://www.linkedin.com/in/salvador-soto-a47b8b34" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-          <a class="link-btn" href="mailto:soto.salvador@gmail.com" target="_top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </a>
-
-        </div>
-
-
-
-
-
-        <div class="labelheader">
-          <div class="t1">
-            <div class="t1a"><a onclick="toggleparty()"></a></div>
-            <div class="t1b">I'm a multi-disciplinary designer. Passionate about Rapid Prototyping and Motion Design. I
-              have
-              <a onclick="toggleparty()">fun</a> designing and coding my ideas.
-              <a onclick="toggleabout()"><span>More about me?</span></a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="about">
-          <div class="about-content">
-            Formed as an Industrial Designer, I have served as a Product Designer, Rapid Prototyper, and Design
-            Technologist
-            accross multiple startup-like teams within Innovation and Research & Development at Flextronics, Hisense,
-            and Katerra.
-
-            <br><br>
-
-            My past experiences involve working in cross-functional teams designing entire end-to-end experiences such
-            as the creation of a hybrid
-
-            <a href="https://www.engadget.com/2011-06-23-prototype-dual-screened-2-in-1-android-smartpad-from-imerj-previ.html"
-              target="_blank">Dual-Screen Smartphone</a>
-
-            at Flextronics — Conceptualizing and prototyping Touch, D-Pad, and
-
-            <a onclick="gotoindex('voiceuis')">Voice User Interfaces</a>
-
-            , which developed into multiple
-
-            <a onclick="gotoindex('smartdisplays')">Smart Displays</a>
-
-            , and TV products for Hisense, Toshiba, and Sharp — The creation of
-
-            <a onclick="gotoindex('uidesignsystems')">UI Design Systems</a>
-
-            and enterprise applications for Katerra's Advanced Buildings and
-
-            <a onclick="gotoindex('embeddeduis')">IoT products</a>
-
-            ecosystem.
-
-            <br><br>
-
-            Over my 10 past years of experience I've gained insightful experience by working together with highly
-            collaborative & cross-functional teams across different time-zones, languages, and regions, like Canada,
-            US, China, Mexico, and India.
-
-            <br><br>
-
-            My contributions have listed me as a registered inventor in multiple technology &
-
-            <a href="https://patents.justia.com/inventor/salvador-soto" target="_blank">innovation patents</a>
-
-            , and rewarded me with final positions in international design contests such the
-
-            <a href="https://theindexproject.org/award/winnersandfinalists/waste-recovering-system"
-              target="_blank">Index Project Award.</a>
-
-            <br><br>
-
-            I'm very passionate about designing and prototyping new concepts, innovative experiences, and meaningful
-            solutions, driven by my immense curiosity to understand and explore multiple disciplines outside my work.
-
-            <br><br><a onclick="toggleabout()"><span></span></a>
-          </div>
-        </div>
-
-        <!--  -->
-
-        <div class="coreitems">
-
-          <div class="index-grid" id="">
-
-            <div class="index-item item-embeddeduis" onclick="gotoindex('embeddeduis')">
-              <div class="groups">
-                <div class="group">
-                  <video class="bg" src="src/kat/faceplate/vid.mp4" type="video/mp4" playsinline autoplay loop
-                    muted></video>
-                  <img class="fg" src="src/misc/towdual.png" alt="">
-                </div>
-              </div>
-              <div class="label">Embeded User Interfaces for IoT devices</div>
-            </div>
-
-            <div class="index-item item-uidesignsystems" onclick="gotoindex('uidesignsystems')">
-              <div class="groups">
-                <div class="group">
-                  <img class="bg" src="src/kat/07.jpg" alt="">
-                  <img class="fg" src="src/misc/ipad.png" alt="">
-                </div>
-                <div class="group">
-                  <video class="bg" src="src/kat/11b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                  <img class="fg" src="src/misc/iphone.png" alt="">
-                </div>
-              </div>
-              <div class="label">UI Design Systems for Desktop & Mobile Building Management Tools</div>
-            </div>
-
-            <div class="index-item item-smartdisplays" onclick="gotoindex('smartdisplays')">
-              <div class="groups">
-                <div class="group">
-                  <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                  <img class="fg" src="src/misc/tv.png" alt="">
-                </div>
-              </div>
-              <div class="label">HTML & Android based Smart Display Interfaces and Operating Systems</div>
-            </div>
-
-            <div class="index-item item-voiceuis" onclick="gotoindex('voiceuis')">
-              <div class="groups">
-                <div class="group">
-                  <lottie-player class="bg" src="src/audio.json" background="transparent" speed=".4" loop autoplay>
-                  </lottie-player>
-                  <img class="fg" src="src/misc/tv.png" alt="">
-                </div>
-              </div>
-              <div class="label">Speech & Voice Audio Interfaces for Displays</div>
-            </div>
-
-            <div class="index-item item-animation" onclick="gotoindex('animation')">
-              <div class="groups">
-                <div class="group">
-                  <video class="bg" src="src/disp/a1b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                  <img class="fg" src="src/misc/ipad.png" alt="">
-                </div>
-              </div>
-              <div class="label">Animations, 3D, and Interactivity</div>
-            </div>
-
-            <div class="index-item item-games" onclick="gotoindex('games')">
-              <div class="groups">
-                <div class="group">
-                  <video class="bg" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                  <img class="fg" src="src/misc/iphone-8.png" alt="">
-                </div>
-                <div class="group">
-                  <video class="bg" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                  <img class="fg" src="src/misc/iphone.png" alt="">
-                </div>
-              </div>
-              <div class="label">Game Design & AR</div>
-            </div>
-
-
-
-            <!-- <div class="index-item"></div>
-            <div class="index-item"></div>
-            <div class="index-item"></div> -->
-
-            <!-- <div>
-              <div onclick="gotoindex('uidesignsystems')" class="indexitem indexsystems">
-                <img class="bgg" src="src/indx/indx2.jpg" alt="">
-                <div class="comp">
-                  <img class="" src="src/misc/iphone.png" alt="">
-                  <video class="" src="src/kat/11b.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                </div>
-              </div>
-              <div onclick="gotoindex('uidesignsystems')" class="indxft">
-                <p>UI Design Systems for Desktop & Mobile Building Management Tools</p>
-              </div>
-            </div>
-
-            <div>
-              <div onclick="gotoindex('smartdisplays')" class="indexitem indextv">
-                <video class="" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-                <img class="" src="src/indx/indx3.jpg" alt="">
-              </div>
-              <div onclick="gotoindex('smartdisplays')" class="indxft">
-                <p>HTML & Android based Smart Display Interfaces and Operating Systems. </p>
-              </div>
-            </div> -->
-
-
-
-            <!-- <div onclick="gotoindex('uidesignsystems')" class="indxft">
-              <p>UI Design Systems for Desktop & Mobile Building Management Tools</p>
-            </div>
-
-            <div onclick="gotoindex('smartdisplays')" class="indxft">
-              <p>HTML & Android based Smart Display Interfaces and Operating Systems. </p>
-            </div> -->
-
-            <!-- <div onclick="gotoindex('voiceuis')" class="indexitem indexaudio">
-              <lottie-player src="src/audio.json" background="transparent" speed=".4" loop autoplay></lottie-player>
-            </div>
-
-            <div onclick="gotoindex('animation')" class="indexitem indexanim">
-              <video class="" src="src/disp/a1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-            </div>
-
-            <div onclick="gotoindex('games')" class="indexitem indexar">
-              <div class="comp2">
-                <img class="" src="src/misc/iphone-8.png" alt="">
-                <video class="" src="src/games/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-              </div>
-              <div class="comp1">
-                <img class="" src="src/misc/iphone.png" alt="">
-                <video class="" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-              </div>
-            </div> -->
-
-            <!-- <div onclick="gotoindex('voiceuis')" class="indxft">
-              <p>Speech & Voice Audio Interfaces for Displays</p>
-            </div>
-
-            <div onclick="gotoindex('animation')" class="indxft">
-              <p>Animations, 3D, and Interactivity</p>
-            </div>
-
-            <div onclick="gotoindex('games')" class="indxft">
-              <p>Personal Projects <br> Game Design & AR</p>
-            </div> -->
-
-          </div>
-
-          <!--  -->
-
-          <div class="txtblk" id="embeddeduis">
-            <div class="title">
-              <h1>Embedded User Interfaces</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-
-            <div class="tags">
-              <div>UI Design</div>
-              <div>UX Prototyping</div>
-              <div>Motion Design</div>
-              <div>UI Component Development</div>
-              <div>QT</div>
-              <div>Embedded Linux</div>
-            </div>
-            <p>A unique form-factor visual interface for an interconnected HVAC system in KATERRA's Building
-              Systems.<br>The project required early concept, design, and prototyping in tandem with the engineering and
-              industrial design teams.<br><br>Within the project I contributed with visual / motion design, animation,
-              and prototyping throughout the entire project. I also helped development by creating and testing a set of
-              readily-availably code components and animations on the target platform in order to rapidly assemble a
-              polished visual interface.
-            </p>
-          </div>
-
-
-
-          <div class="coreitem section-0 tow" style="background: rgb(194, 194, 194);">
-            <div class="container">
-              <img class="faceplate" ph="src/placeholder/100-100.jpg" src="src/kat/faceplate/img.jpg" alt="">
-              <div class="videomask">
-                <video class="" po="src/placeholder/100-133.jpg" src="src/kat/faceplate/vid.mp4" type="video/mp4"
-                  playsinline autoplay loop muted></video>
-              </div>
-              <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-            </div>
-          </div>
-
-
-
-          <!-- <div class="coreitem section-0">
-            <div class="fullstack">
-              <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/01.jpg" alt="">
-            </div>
-          </div> -->
-
-
-
-          <div class="coreitem section-0 devices">
-            <div class="device-grid">
-              <div class="device">
-                <img class="fg" src="src/kat/devicegrid/load.png" alt="">
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/cool.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/toggles.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/fan2.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/heat.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/adjust.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <img class="fg" src="src/kat/devicegrid/menu.jpg" alt="">
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-              <div class="device">
-                <video class="fg" src="src/kat/devicegrid/menu.mp4" type="video/mp4" playsinline autoplay loop
-                  muted></video>
-                <img class="reflection" src="src/kat/faceplate/ref.png" alt="">
-                <img class="bg" src="src/kat/device.jpg" alt="">
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="coreitem section-0">
-            <div class="hstack">
-              <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/tow-ia.jpg" alt="">
-              <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/tow-flow.jpg" alt="">
-            </div>
-          </div>
-
-
-
-
-          <div class="coreitem section-0">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-177.jpg" data-src="src/kat/03a.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-177.jpg" data-src="src/kat/03b.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="coreitem section-0">
-            <div class="vstack">
-              <img class="lozad" src="src/placeholder/100-61.jpg" data-src="src/kat/04.jpg" alt="" style="width: 85%;">
-            </div>
-          </div>
-
-          <!-- <div class="coreitem section-0 framehstack">
-            <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/05a.jpg" alt="">
-            </div>
-            <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/kat/05b.jpg" alt="">
-            </div>
-          </div> -->
-          <div class="coreitem section-0">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/05a.jpg" alt=""
-                style="width: 42%;">
-              <!-- </div> -->
-              <!-- <div class="vstack w50"> -->
-              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/kat/05b.jpg" alt=""
-                style="width: 38.5%;">
-            </div>
-          </div>
-
-          <div class="coreitem section-0">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/06.mp4" type="video/mp4"
-                style="width: 85%;" playsinline autoplay loop muted></video>
-              <!-- style="width: 47.5%;"></video> -->
-              <!-- </div> -->
-              <!-- </div> -->
-
-              <!-- <div class="coreitem section-0"> -->
-              <!-- <div class="vstack"> -->
-              <!-- <img class="" ph="src/placeholder/100-75.jpg" src="src/kat/01.jpg" alt="" style="width: 36%;"> -->
-            </div>
-          </div>
-
-
-          <!--  -->
-
-          <div class="txtblk" id="uidesignsystems">
-            <div class="title">
-              <h1>UI Design Systems & Tools</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-            <div class="tags">
-              <div>UI Design</div>
-              <div>UX Prototyping</div>
-              <div>Design Systems</div>
-              <div>Web Component Development</div>
-              <div>Storybook</div>
-              <div>Desktop & Mobile</div>
-            </div>
-            <p>These tools help a wide range of scenarios, from the complex provisioning and installation of
-              interconnected
-              devices in all building units, to the management, maintenance, and troubleshooting of these systems while
-              in operation. <br><br> My work involved the creation of an entire <a
-                href='https://flamboyant-gates-7ea7eb.netlify.app/' target='_blank'>UI Design System</a> for the web
-              platform. I managed, designed, and developed a library of front-end components that were used by both
-              designers and developers to mock-up, prototype, and develop the final product. <br><br> The outcome
-              allowed for a single universal design source, avoiding design > development hand-off issues and creating a
-              much more efficient process.</p>
-          </div>
-
-          <!-- <div class="coreitem section-1">
-            <div class="vstack">
-              <img class="lozad" src="src/placeholder/100-61.jpg" data-src="src/kat/12b.jpg" alt="">
-            </div>
-          </div> -->
-
-
-
-
-          <div class="coreitem section-1">
-            <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/08.jpg" alt="">
-            </div>
-          </div>
-
-
-
-          <div class="coreitem section-1">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt="">
-            </div>
-          </div>
-
-
-          <!-- <div class="coreitem section-1 framehstack">
-            <div class="vstack" style="width: 42%;">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt="">
-            </div>
-            <div class="vstack" style="width: 57%;">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt="">
-            </div>
-          </div> -->
-
-          <div class="coreitem section-1">
-            <div class="hstack">
-              <video class="lozad phone-border" poster="src/placeholder/100-216.jpg" data-src="src/kat/11b.mp4"
-                type="video/mp4" playsinline autoplay loop muted style="width: 20.4%;"></video>
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/07.jpg" alt="" style="width: 59%;">
-            </div>
-          </div>
-
-
-
-          <div class="coreitem section-1">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/13.mp4" type="video/mp4"
-                playsinline autoplay loop muted style="width: 85%;"></video>
-            </div>
-          </div>
-
-
-          <div class="coreitem section-1">
-            <div class="vstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/12.jpg" alt="" style="width: 85%;">
-              <!-- style="width: 55%;" -->
-              <!-- <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt=""
-                style="width: 27.3%;"> -->
-            </div>
-          </div>
-
-
-
-
-
-
-          <!-- <div class="coreitem section-1" id="building_management_tools">
-            <div class="vstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/07.jpg" alt="">
-            </div>
-          </div> -->
-
-          <!-- <div class="coreitem section-1 framehstack">
-            <div class="vstack" style="width: 35.5%;">
-              <video class="lozad phone-border" poster="src/placeholder/100-216.jpg" data-src="src/kat/11b.mp4"
-                type="video/mp4" playsinline autoplay loop muted></video>
-            </div>
-            <div class="vstack" style="width: 63.5%;">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/11a.jpg" alt="">
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-
-          <!-- <div class="coreitem section-1 framehstack">
-            <div class="vstack w33">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside.jpg" alt="">
-            </div>
-            <div class="vstack w66">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14b.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div> -->
-
-          <div class="coreitem section-1">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside.jpg" alt=""
-                style="width: 25.5%;">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14b.mp4" type="video/mp4"
-                playsinline autoplay loop muted style="width: 55%;"></video>
-            </div>
-          </div>
-
-
-          <div class="coreitem section-1">
-            <div class="hstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14a.mp4" type="video/mp4"
-                playsinline autoplay loop muted style="width: 55%;"></video>
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside2.jpg" alt=""
-                style="width: 25.5%;">
-            </div>
-          </div>
-
-          <!-- <div class="coreitem section-1 framehstack">
-            <div class="vstack w66">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14a.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-            <div class="vstack w33">
-              <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/codeside2.jpg" alt="">
-            </div>
-          </div> -->
-
-          <!-- <div class="coreitem section-1 ">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/kat/14a.mp4" type="video/mp4"
-                playsinline autoplay loop muted style="width: 85%;"></video>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-          <!-- 
-          <div class="coreitem section-1">
-            <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/15.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="coreitem section-1">
-            <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-75.jpg" data-src="src/kat/18.jpg" alt="">
-            </div>
-          </div> -->
-
-          <!--  -->
-
-          <div class="txtblk" id="smartdisplays">
-            <div class="title">
-              <h1>Smart Displays UIs</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-            <div class="tags">
-              <div>UI Design</div>
-              <div>UX Prototyping</div>
-              <div>Motion Design</div>
-              <div>10-foot User Interfaces</div>
-              <div>High Fidelity Prototyping</div>
-              <div>Android & HTML</div>
-            </div>
-            <p>Within the Hisense Innovation group, my work compromised multiple conceptual proposals involving a wide
-              range of skills, from Visual, Motion, and Animation Design, to High fidelity prototyping, Front-end
-              Development, and even Hardware prototyping. <br><br> While in charge of Rapid Prototyping I used as many
-              platforms and tools as possible in order to achieve a final product like experience during the very early
-              stages of the project. This allowed for essential user testing, pre-development design changes, and as a
-              unified vision to the entire group and stakeholders. <br><br> Many products ended up being successfully
-              released into the international market under the Sharp & Hisense umbrella.</p>
-          </div>
-
-          <div class="coreitem section-2">
-            <div class="fullstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <!-- <div class="coreitem section-2 framehstack">
-            <div class="fullstack w50">
-              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/disp/b1.jpg" alt="">
-            </div>
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u3.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u7.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div> -->
-          <div class="coreitem section-2">
-            <div class="hstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u3.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u8.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-2">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u2.mp4" type="video/mp4"
-                style="width: 85%;" playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-2">
-            <div class="hstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u4.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/disp/sc3.jpg" alt="">
-              <!-- </div> -->
-              <!-- <div class="fullstack w50"> -->
-              <!-- <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/disp/sc2b.jpg" alt=""> -->
-            </div>
-          </div>
-
-          <div class="coreitem section-2">
-            <div class="vstack">
-              <!-- <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u5.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video> -->
-              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/disp/a1.jpg" alt="" style="width: 85%;">
-            </div>
-          </div>
-
-          <div class="coreitem section-2 framehstack">
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u6.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/u9.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-            <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-133.jpg" data-src="src/disp/p1.jpg" alt="">
-
-            </div>
-          </div>
-
-
-
-          <!--  -->
-
-          <div class="txtblk" id="voiceuis">
-            <div class="title">
-              <h1>Voice User Interfaces</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-            <div class="tags">
-              <div>Voice Interface</div>
-              <div>Animation</div>
-              <div>UX Prototyping</div>
-              <div>High Fidelity Prototyping</div>
-              <div>HTML</div>
-            </div>
-            <p>A Voice user interface project created as part of a series of Hisense branded displays to make use of
-              Hisense newest voice recognition technology. <br><br> Some of my contributions to the project were the
-              design and development of a microphone audio <a
-                href='https://github.com/gesoto/microphone-audio-visualizer' target='_blank'>visualizer</a> — the
-              animation of a series of <a href='https://github.com/gesoto/animation-tester-reactjs'
-                target='_blank'>avatar emotions</a> and its library implementation — And a high-fidelity prototype,
-              which used a real microphone interface to voice-control the <a
-                href='https://github.com/gesoto/voice-synthesis-and-speech-recognition' target='_blank'>prototype</a> by
-              using the Web Audio API together with a list of pre-defined of preset commands and responses.</p>
-          </div>
-
-          <div class="coreitem section-3">
-            <div class="fullstack lottie">
-              <lottie-player src="src/audio.json" background="transparent" speed=".4" style="width: 70%; height: 10%"
-                loop autoplay></lottie-player>
-            </div>
-          </div>
-
-          <div class="coreitem section-3">
-            <div class="fullstack">
-              <video class="lozad" poster="src/placeholder/100-47.jpg" data-src="src/speech/w1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-3 framehstack">
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-61.jpg" data-src="src/speech/reco.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-61.jpg" data-src="src/speech/reco2.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-
-            <div class="fullstack w50">
-              <lottie-player src="src/wave.json" background="transparent" speed="1" style="width: 100%; height: 100%"
-                loop autoplay></lottie-player>
-            </div>
-          </div>
-
-          <div class="coreitem section-3">
-            <div class="hstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/speech/v0.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/speech/v5.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-
-          <div class="coreitem section-3 framehstack">
-            <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-61.jpg" data-src="src/speech/codeside2.jpg" alt="">
-            </div>
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-112.jpg" data-src="src/speech/v1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-3">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/speech/v6.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-
-
-          <!--  -->
-
-
-          <div class="txtblk" id="animation">
-            <div class="title">
-              <h1>Animation</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-            <div class="tags">
-              <div>Motion Design</div>
-              <div>Animation</div>
-              <div>After Effects</div>
-              <div>Three.js</div>
-              <div>Cinema 4D</div>
-            </div>
-            <p>Within the product design process I've worked on several animations such as branding logo animations,
-              screensavers, loading screens, and dynamic / interactive animations for displays.<br><br>I've created
-              these animations both with traditional and dynamic animation tools and libraries such as After Effects,
-              Cinema 4D, Animate, and THREE JS (3D Javascript library).</p>
-          </div>
-
-          <div class="coreitem section-4">
-            <div class="fullstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/a2.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-4">
-            <div class="hstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/a1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/disp/a3.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-4 framehstack">
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/v1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/v2.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-133.jpg" data-src="src/anim/v1w.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-4">
-            <div class="vstack">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/4.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-          <div class="coreitem section-4 framehstack">
-            <div class="vstack w50">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/3.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/5.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-            <div class="vstack w50">
-              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/anim/3.jpg" alt="">
-              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/anim/4.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="coreitem section-4">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-56.jpg" data-src="src/anim/1.jpg" alt="">
-              <video class="lozad" poster="src/placeholder/100-56.jpg" data-src="src/anim/1.mp4" type="video/mp4"
-                playsinline autoplay loop muted></video>
-            </div>
-          </div>
-
-
-          <!-- <div class="vstack w50">
-            <img class="lozad" src="src/placeholder/100-122.jpg" data-src="src/kat/05a.jpg" alt="">
-          </div> -->
-
-          <!--  -->
-
-          <div class="txtblk" id="games">
-            <div class="title">
-              <h1>Games</h1>
-              <!-- <div class="info-button" onclick="toggleinfo()">
-                <svg class="infosvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-info">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <div class="label">Info</div>
-              </div> -->
-              <!-- <div class="more-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-arrow-right">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div> -->
-            </div>
-            <div class="tags">
-              <div>Game Design & Development</div>
-              <div>2D & 3D Prototyping</div>
-              <div>Unity</div>
-              <div>AR</div>
-            </div>
-            <p>Two mobile video games that I've worked on as passion projects. An Untitled personal project, and Zip, a
-              game in which I collaborated as part of a 3 person independent team. <br><br> These projects gave me the
-              inspiration to learn and the opportunity to work on a multitude of disciplines such as; visual design,
-              game design, animation, programming, and audio design.</p>
-          </div>
-
-
-
-          <div class="coreitem section-5">
-            <div class="hstack">
-              <video class="lozad phone-border" poster="src/placeholder/100-177.jpg" data-src="src/games/u1.mp4"
-                type="video/mp4" playsinline autoplay loop muted style="width: 28%;"></video>
-              <video class="lozad" poster="src/placeholder/100-100.jpg" data-src="src/games/u3.mp4" type="video/mp4"
-                playsinline autoplay loop muted style="width: 49.5%;"></video>
-            </div>
-          </div>
-
-
-
-          <div class="coreitem section-5">
-            <div class="hstack">
-              <!-- <div class="phonecompo"> -->
-              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
-              <video class="" src="src/games/ar1.mp4" type="video/mp4" playsinline autoplay loop muted
-                style="width: 24.7%;"></video>
-              <!-- </div> -->
-              <!-- <div class="phonecompo"> -->
-              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
-              <video class="" src="src/games/ar2.mp4" type="video/mp4" playsinline autoplay loop muted
-                style="width: 24.7%;"></video>
-              <!-- </div> -->
-              <!-- <div class="phonecompo"> -->
-              <!-- <img class="" src="src/misc/iphone.png" alt=""> -->
-              <video class="" src="src/games/ar3.mp4" type="video/mp4" playsinline autoplay loop muted
-                style="width: 24.7%;"></video>
-              <!-- </div> -->
-            </div>
-          </div>
-
-          <div class="coreitem section-5">
-            <div class="hstack">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f1.jpg" alt=""
-                style="width: 39.5%;">
-              <img class="lozad" src="src/placeholder/100-100.jpg" data-src="src/games/f2.jpg" alt=""
-                style="width: 39.5%;">
-            </div>
-          </div>
-
-          <div class="coreitem section-5">
-            <div class="hstack">
-              <img class="lozad phone-border" src="src/placeholder/100-56.jpg" data-src="src/games/f4.jpg" alt="">
-              <img class="lozad phone-border" src="src/placeholder/100-56.jpg" data-src="src/games/f5.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="coreitem section-5">
-            <div class="hstack">
-              <img class="lozad phone-border" src="src/placeholder/100-56.jpg" data-src="src/games/f6.jpg" alt="">
-              <img class="lozad phone-border" src="src/placeholder/100-56.jpg" data-src="src/games/f7.jpg" alt="">
-            </div>
-          </div>
-
-
-          <!-- <div class="coreitem section-5">
-            <div class="fullstack">
-              <img class="lozad" src="src/placeholder/100-47.jpg" data-src="src/games/f3.jpg" alt="">
-            </div>
-          </div> -->
-
-          <!--  -->
-
-          <div class="footer">
-            <div class="totop-btn-foot">
-              <div class="totop-btn-container" onclick="backtotop()">
-                <img src="src/misc/arrow-up.svg">
-              </div>
-            </div>
-            <div class="credit">Created by Salvador Soto 🙋‍♂️</div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+  <footer><a href="https://github.com/gesoto/gesoto.github.io" target="_blank">_____designed and developed by myself_____</a></footer>
 
   <script src="./lottie-player.js"></script>
   <script src="./gsap.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="nw/index-script.js"></script>
+
 
 </body>
 
