@@ -260,19 +260,22 @@ function partycallback(entries, observer) {
 //     // hidetotopbtn();
 // }
 
-// // show on footer
+// FOOTER BUTTON
 
-// // const footer = document.querySelector('.footer');
-// // let footer_observer = new IntersectionObserver(footercallback);
-// // footer_observer.observe(footer);
-// // function footercallback(entries, observer) {
-// //     entries.forEach(entry => {
-// //         if (entry.isIntersecting) {
-// //             gsap.to(totopbtn, { duration: 0.25, ease: "power1.out", bottom: "200px" });
-// //             setTimeout(() => { totopbtnison = true }, 700);
-// //         }
-// //     });
-// // }
+// const bhit = document.querySelector('.bottomhit');
+// const nextbtn = document.querySelector('.nextbtn');
+// let bhit_observer = new IntersectionObserver(bhitcallback);
+// bhit_observer.observe(bhit);
+// function bhitcallback(entries, observer) {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             gsap.to(nextbtn, { duration: 0.25, ease: "power2.out", y: 0 });
+//             console.log("bottom hit");
+//         } else {
+//             gsap.to(nextbtn, { duration: 0.25, ease: "expo.out", y: 80 });
+//         }
+//     });
+// }
 
 
 // //

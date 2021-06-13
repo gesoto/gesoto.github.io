@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>__ssoto__</title>
-  <link rel="stylesheet" href="nw/child.css">
-  <link rel="stylesheet" href="nw/text.css">
-  <link rel="stylesheet" href="nw/index-grid.css">
-  <link rel="stylesheet" href="nw/topbar.css">
+  <link rel="stylesheet" href="nw/style.css">
+  <link rel="stylesheet" href="nw/textstyle.css">
 </head>
 
 
@@ -156,22 +154,22 @@
         </div>
       </div>
 
-      <div class="index-item item-smartdisplays" onclick="window.location.href = 'tv.html';">
-        <div class="label">Smart Display User Interfaces & Operating Systems</div>
-        <div class="groups">
-          <div class="group">
-            <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
-            <img class="fg" src="src/misc/tv.png" alt="">
-          </div>
-        </div>
-      </div>
-
       <div class="index-item item-voiceuis" onclick="window.location.href = 'voice.html';">
         <div class="label">Speech & Voice Interfaces for Smart Displays</div>
         <div class="groups">
           <div class="group">
             <lottie-player class="bg" src="src/audio.json" background="transparent" speed=".4" loop autoplay>
             </lottie-player>
+            <img class="fg" src="src/misc/tv.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="index-item item-smartdisplays" onclick="window.location.href = 'tv.html';">
+        <div class="label">Smart Display User Interfaces & Operating Systems</div>
+        <div class="groups">
+          <div class="group">
+            <video class="bg" src="src/disp/u1.mp4" type="video/mp4" playsinline autoplay loop muted></video>
             <img class="fg" src="src/misc/tv.png" alt="">
           </div>
         </div>
@@ -197,8 +195,20 @@
 
     </div>
 
+    <div class="nextbtn">
+      <a class="link-btn" href="tow.html" target="_self">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-arrow-down">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
+    </div>
+
   </main>
 
+  <!-- <div class="bottomhit" style="height: 1px;"></div> -->
   <!-- <footer></footer> -->
 
   <script src="./lottie-player.js"></script>

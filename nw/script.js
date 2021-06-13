@@ -25,12 +25,29 @@
 // const labelheader = document.querySelector(".labelheader");
 // const morebutton = document.querySelectorAll(".more-button");
 
-// const body = document.querySelector(".main");
-// window.addEventListener('load', function () {
-//     gsap.fromTo(body, { opacity: 0 }, { duration: 0.5, ease: "linear", opacity: 1, delay: 0.1 });
-//     gsap.fromTo(body, { y: 100 }, { y: 0, delay: 0.1 });
-// }, false);
 
+
+// onload transition
+
+const mchild = document.querySelector(".main-child");
+window.addEventListener('load', function () {
+    gsap.fromTo(mchild, { y: 100, opacity: 0 }, { duration: 1, ease: "expo.out", y: 0, opacity: 1 });
+}, false);
+
+
+// go back, go next
+
+function gonext(i) {
+    gsap.to(mchild, { duration: 0.5, ease: "power3.out", y: -100, opacity: 0 });
+    setTimeout(function () {
+        // window.location.href = '...';
+        window.location.replace(i + '.html');
+    }, 500);
+}
+
+function goback() {
+    window.history.back();
+}
 
 // //
 

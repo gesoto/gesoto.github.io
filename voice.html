@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>__ssoto__</title>
-  <link rel="stylesheet" href="nw/child.css">
-  <link rel="stylesheet" href="nw/text.css">
+  <link rel="stylesheet" href="nw/style.css">
+  <link rel="stylesheet" href="nw/textstyle.css">
 </head>
 
 
@@ -14,8 +14,8 @@
 <body>
 
   <!-- nav buttons -->
-  <div class="nextbtn">
-    <a class="link-btn" href="index-new.html" target="_self">
+  <div class="backbtn">
+    <a class="link-btn" onclick="goback()">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
         class="feather feather-arrow-left">
@@ -25,7 +25,7 @@
     </a>
   </div>
 
-  <main>
+  <main class="main-child">
 
     <div class="txtblk" id="voiceuis">
       <div class="title">
@@ -204,11 +204,21 @@
           playsinline autoplay loop muted></video></div>
     </div>
 
+    <div class="nextbtn">
+      <a class="link-btn" onclick="gonext('tv')" target="_self">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-arrow-down">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
+    </div>
 
   </main>
 
   <script src="./lottie-player.js"></script>
-  <!-- <script src="./gsap.min.js"></script> -->
+  <script src="./gsap.min.js"></script>
   <script src="nw/script.js"></script>
 
 </body>
