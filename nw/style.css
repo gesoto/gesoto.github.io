@@ -536,6 +536,14 @@ main {
   box-shadow: inset 0 0 0 1px #444;
 }
 
+.blackblock .block-cont-h-full {
+  height: 99%;
+}
+
+.blackblock .block-cont-w-full {
+  width: 99%;
+}
+
 /* 
 
 
@@ -562,13 +570,19 @@ main {
 
 /* simple tow */
 
+.itm {
+  border-radius: 10px;
+}
+
 .itm.tow {
   width: 100%;
   /* background: red; */
   position: relative;
+  
 }
 .itm.tow .bg {
   width: 100%;
+  border-radius: 10px;
   /* opacity: 0.5; */
   /* background: rgb(134, 105, 105); */
 }
@@ -576,6 +590,7 @@ main {
   width: 90%;
   position: absolute;
   margin: 5%;
+  border-radius: 5px;
 }
 
 /* single faceplate tow  */
