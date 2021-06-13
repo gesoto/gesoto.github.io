@@ -436,7 +436,7 @@ main {
 
 .s-block .grid,
 .b-block .grid {
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;
