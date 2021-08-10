@@ -738,6 +738,17 @@ main {
   border: 2px solid white;
 }
 
+.nextbtn .label {
+  font-size: 14px;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.nextbtn:hover .label {
+  opacity: 1;
+}
+
 /* 
 
 
